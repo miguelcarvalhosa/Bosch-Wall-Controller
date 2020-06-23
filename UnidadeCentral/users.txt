@@ -1,0 +1,6 @@
+5
+Hugo	23.3
+Francisco	19.11
+Tânia	24.33
+Gonçalo	18.89
+Miguel	20.79

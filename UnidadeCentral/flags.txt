@@ -1,0 +1,26 @@
+## MENU ADJUST ##
+fl_ui_adjust_setpointsChanged 	->	enviado quando o utilizador altera setpoints e carrega em confirm
+
+## MENU CONFIRM_USER ##
+fl_ui_confirmUser_recogtionFailed -> reconhecimento falhou
+fl_ui_confirmUser_accessMenus	  -> utilizador quer aceder aos menus e nao alterar o setpoint
+
+## MENU VALIDATION ##
+fl_ui_validation_success	->	utilizador quer ser adicionado
+fl_ui_validation_failure	->	utilizador não quer ser adicionado
+
+## MENU ADDUSER ##
+fl_ui_addUser_userDataReady	->	utilizador colocou o nome e setpoint e carrega confirm
+
+## MENU SCHEDULE ##
+fl_ui_schedule_scheduleChanged -> utilizador altera setpoint numa determinada data
+
+## MENU STATS ##
+
+## MENU SETTINGS ##
+fl_ui_settings_gotosleep 			-> utilizador coloca o sistema em modo sleep
+fl_ui_settings_changeUserSetpoint 	-> utilizador altera o seu setpoint
+fl_ui_settings_addUser 				-> adicionar utilizador através do menu de definições
+
+## MESH -> UI ##
+

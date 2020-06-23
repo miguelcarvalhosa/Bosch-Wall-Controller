@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="lv_drivers" displayName="lv_drivers" projectFiles="true">
+        <logicalFolder name="display" displayName="display" projectFiles="true">
+          <itemPath>lv_drivers/display/R61581.h</itemPath>
+          <itemPath>lv_drivers/display/SSD1963.h</itemPath>
+          <itemPath>lv_drivers/display/fbdev.h</itemPath>
+          <itemPath>lv_drivers/display/ST7565.h</itemPath>
+          <itemPath>lv_drivers/display/monitor.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="indev" displayName="indev" projectFiles="true">
+          <itemPath>lv_drivers/indev/mouse.h</itemPath>
+          <itemPath>lv_drivers/indev/XPT2046.h</itemPath>
+          <itemPath>lv_drivers/indev/FT5406EE8.h</itemPath>
+          <itemPath>lv_drivers/indev/keyboard.h</itemPath>
+        </logicalFolder>
+        <itemPath>lv_drivers/lv_drv_conf_templ.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="lv_examples" displayName="lv_examples" projectFiles="true">
+        <logicalFolder name="lv_apps" displayName="lv_apps" projectFiles="true">
+          <logicalFolder name="benchmark" displayName="benchmark" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/benchmark/benchmark.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="demo" displayName="demo" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/demo/demo.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="sysmon" displayName="sysmon" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/sysmon/sysmon.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="terminal" displayName="terminal" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/terminal/terminal.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="tpcal" displayName="tpcal" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/tpcal/tpcal.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="lv_tests" displayName="lv_tests" projectFiles="true">
+          <logicalFolder name="lv_test_group"
+                         displayName="lv_test_group"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_group/lv_test_group.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_test_misc"
+                         displayName="lv_test_misc"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_misc/lv_test_task.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_test_obj" displayName="lv_test_obj" projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_obj/lv_test_obj.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_test_objx"
+                         displayName="lv_test_objx"
+                         projectFiles="true">
+            <logicalFolder name="lv_test_bar" displayName="lv_test_bar" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_bar/lv_test_bar.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_btn" displayName="lv_test_btn" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_btn/lv_test_btn.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_btnm"
+                           displayName="lv_test_btnm"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_btnm/lv_test_btnm.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_cb" displayName="lv_test_cb" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_cb/lv_test_cb.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_chart"
+                           displayName="lv_test_chart"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_chart/lv_test_chart.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_cont"
+                           displayName="lv_test_cont"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_cont/lv_test_cont.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_ddlist"
+                           displayName="lv_test_ddlist"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_ddlist/lv_test_ddlist.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_gauge"
+                           displayName="lv_test_gauge"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_gauge/lv_test_gauge.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_img" displayName="lv_test_img" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_img/lv_test_img.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_kb" displayName="lv_test_kb" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_kb/lv_test_kb.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_label"
+                           displayName="lv_test_label"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_label/lv_test_label.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_led" displayName="lv_test_led" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_led/lv_test_led.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_line"
+                           displayName="lv_test_line"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_line/lv_test_line.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_list"
+                           displayName="lv_test_list"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_list/lv_test_list.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_lmeter"
+                           displayName="lv_test_lmeter"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_lmeter/lv_test_lmeter.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_mbox"
+                           displayName="lv_test_mbox"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_mbox/lv_test_mbox.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_page"
+                           displayName="lv_test_page"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_page/lv_test_page.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_roller"
+                           displayName="lv_test_roller"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_roller/lv_test_roller.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_slider"
+                           displayName="lv_test_slider"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_slider/lv_test_slider.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_sw" displayName="lv_test_sw" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_sw/lv_test_sw.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_ta" displayName="lv_test_ta" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_ta/lv_test_ta.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_tabview"
+                           displayName="lv_test_tabview"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_tabview/lv_test_tabview.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_win" displayName="lv_test_win" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_win/lv_test_win.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="lv_test_stress"
+                         displayName="lv_test_stress"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_stress/lv_test_stress.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_test_theme"
+                         displayName="lv_test_theme"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_theme/lv_test_theme.h</itemPath>
+          </logicalFolder>
+          <itemPath>lv_examples/lv_tests/lv_test.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_tutorial" displayName="lv_tutorial" projectFiles="true">
+          <logicalFolder name="0_porting" displayName="0_porting" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/0_porting/lv_tutorial_porting.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="10_keyboard" displayName="10_keyboard" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/10_keyboard/lv_tutorial_keyboard.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="1_hello_world"
+                         displayName="1_hello_world"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/1_hello_world/lv_tutorial_hello_world.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="2_objects" displayName="2_objects" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/2_objects/lv_tutorial_objects.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="3_styles" displayName="3_styles" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/3_styles/lv_tutorial_styles.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="4_themes" displayName="4_themes" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/4_themes/lv_tutorial_themes.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="5_antialiasing"
+                         displayName="5_antialiasing"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/5_antialiasing/lv_tutorial_antialiasing.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="6_images" displayName="6_images" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/6_images/lv_tutorial_images.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="7_fonts" displayName="7_fonts" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/7_fonts/lv_tutorial_fonts.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="8_animations"
+                         displayName="8_animations"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/8_animations/lv_tutorial_animations.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="9_responsive"
+                         displayName="9_responsive"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/9_responsive/lv_tutorial_responsive.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>lv_examples/lv_ex_conf_templ.h</itemPath>
+        <itemPath>lv_examples/lv_examples.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="lvgl" displayName="lvgl" projectFiles="true">
+        <logicalFolder name="docs" displayName="docs" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="lv_core" displayName="lv_core" projectFiles="true">
+          <itemPath>lvgl/lv_core/lv_obj.h</itemPath>
+          <itemPath>lvgl/lv_core/lv_group.h</itemPath>
+          <itemPath>lvgl/lv_core/lv_refr.h</itemPath>
+          <itemPath>lvgl/lv_core/lv_vdb.h</itemPath>
+          <itemPath>lvgl/lv_core/lv_style.h</itemPath>
+          <itemPath>lvgl/lv_core/lv_indev.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_draw" displayName="lv_draw" projectFiles="true">
+          <itemPath>lvgl/lv_draw/lv_draw_vbasic.h</itemPath>
+          <itemPath>lvgl/lv_draw/lv_draw_rbasic.h</itemPath>
+          <itemPath>lvgl/lv_draw/lv_draw.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_hal" displayName="lv_hal" projectFiles="true">
+          <itemPath>lvgl/lv_hal/lv_hal_tick.h</itemPath>
+          <itemPath>lvgl/lv_hal/lv_hal_disp.h</itemPath>
+          <itemPath>lvgl/lv_hal/lv_hal_indev.h</itemPath>
+          <itemPath>lvgl/lv_hal/lv_hal.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_misc" displayName="lv_misc" projectFiles="true">
+          <logicalFolder name="lv_fonts" displayName="lv_fonts" projectFiles="true">
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_symbol_def.h</itemPath>
+          </logicalFolder>
+          <itemPath>lvgl/lv_misc/lv_area.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_ll.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_color.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_ufs.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_circ.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_task.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_templ.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_font.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_trigo.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_mem.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_txt.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_math.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_anim.h</itemPath>
+          <itemPath>lvgl/lv_misc/lv_fs.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_objx" displayName="lv_objx" projectFiles="true">
+          <itemPath>lvgl/lv_objx/lv_win.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_page.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_chart.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_slider.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_img.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_kb.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_lmeter.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_list.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_led.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_tabview.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_line.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_objx_templ.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_btn.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_roller.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_sw.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_btnm.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_ta.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_cont.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_gauge.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_ddlist.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_mbox.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_label.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_cb.h</itemPath>
+          <itemPath>lvgl/lv_objx/lv_bar.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_themes" displayName="lv_themes" projectFiles="true">
+          <itemPath>lvgl/lv_themes/lv_theme_default.h</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_alien.h</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_material.h</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme.h</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_templ.h</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_zen.h</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_mono.h</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_night.h</itemPath>
+        </logicalFolder>
+        <itemPath>lvgl/lvgl.h</itemPath>
+        <itemPath>lvgl/lv_conf_templ.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="mcu_drv" displayName="mcu_drv" projectFiles="true">
+        <itemPath>mcu_drv/delay.h</itemPath>
+        <itemPath>mcu_drv/parallel.h</itemPath>
+        <itemPath>mcu_drv/spi.h</itemPath>
+      </logicalFolder>
+      <itemPath>configbits.h</itemPath>
+      <itemPath>lv_conf.h</itemPath>
+      <itemPath>lv_drv_conf.h</itemPath>
+      <itemPath>lv_ex_conf.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="lv_drivers" displayName="lv_drivers" projectFiles="true">
+        <logicalFolder name="display" displayName="display" projectFiles="true">
+          <itemPath>lv_drivers/display/monitor.c</itemPath>
+          <itemPath>lv_drivers/display/SSD1963.c</itemPath>
+          <itemPath>lv_drivers/display/ST7565.c</itemPath>
+          <itemPath>lv_drivers/display/fbdev.c</itemPath>
+          <itemPath>lv_drivers/display/R61581.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="indev" displayName="indev" projectFiles="true">
+          <itemPath>lv_drivers/indev/FT5406EE8.c</itemPath>
+          <itemPath>lv_drivers/indev/keyboard.c</itemPath>
+          <itemPath>lv_drivers/indev/XPT2046.c</itemPath>
+          <itemPath>lv_drivers/indev/mouse.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="lv_examples" displayName="lv_examples" projectFiles="true">
+        <logicalFolder name="lv_apps" displayName="lv_apps" projectFiles="true">
+          <logicalFolder name="benchmark" displayName="benchmark" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/benchmark/benchmark_bg.c</itemPath>
+            <itemPath>lv_examples/lv_apps/benchmark/benchmark.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="demo" displayName="demo" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/demo/demo.c</itemPath>
+            <itemPath>lv_examples/lv_apps/demo/img_bubble_pattern.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="sysmon" displayName="sysmon" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/sysmon/sysmon.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="terminal" displayName="terminal" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/terminal/terminal.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="tpcal" displayName="tpcal" projectFiles="true">
+            <itemPath>lv_examples/lv_apps/tpcal/tpcal.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="lv_tests" displayName="lv_tests" projectFiles="true">
+          <logicalFolder name="lv_test_group"
+                         displayName="lv_test_group"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_group/lv_test_group.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_test_misc"
+                         displayName="lv_test_misc"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_misc/lv_test_task.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_test_obj" displayName="lv_test_obj" projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_obj/lv_test_obj.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_test_objx"
+                         displayName="lv_test_objx"
+                         projectFiles="true">
+            <logicalFolder name="lv_test_bar" displayName="lv_test_bar" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_bar/lv_test_bar.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_btn" displayName="lv_test_btn" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_btn/lv_test_btn.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_btnm"
+                           displayName="lv_test_btnm"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_btnm/lv_test_btnm.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_cb" displayName="lv_test_cb" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_cb/lv_test_cb.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_chart"
+                           displayName="lv_test_chart"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_chart/lv_test_chart.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_cont"
+                           displayName="lv_test_cont"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_cont/lv_test_cont.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_ddlist"
+                           displayName="lv_test_ddlist"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_ddlist/lv_test_ddlist.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_gauge"
+                           displayName="lv_test_gauge"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_gauge/lv_test_gauge.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_img" displayName="lv_test_img" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_img/lv_test_img.c</itemPath>
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_img/img_flower_icon.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_kb" displayName="lv_test_kb" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_kb/lv_test_kb.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_label"
+                           displayName="lv_test_label"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_label/lv_test_label.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_led" displayName="lv_test_led" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_led/lv_test_led.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_line"
+                           displayName="lv_test_line"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_line/lv_test_line.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_list"
+                           displayName="lv_test_list"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_list/lv_test_list.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_lmeter"
+                           displayName="lv_test_lmeter"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_lmeter/lv_test_lmeter.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_mbox"
+                           displayName="lv_test_mbox"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_mbox/lv_test_mbox.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_page"
+                           displayName="lv_test_page"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_page/lv_test_page.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_roller"
+                           displayName="lv_test_roller"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_roller/lv_test_roller.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_slider"
+                           displayName="lv_test_slider"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_slider/lv_test_slider.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_sw" displayName="lv_test_sw" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_sw/lv_test_sw.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_ta" displayName="lv_test_ta" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_ta/lv_test_ta.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_tabview"
+                           displayName="lv_test_tabview"
+                           projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_tabview/lv_test_tabview.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lv_test_win" displayName="lv_test_win" projectFiles="true">
+              <itemPath>lv_examples/lv_tests/lv_test_objx/lv_test_win/lv_test_win.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="lv_test_stress"
+                         displayName="lv_test_stress"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_stress/lv_test_stress.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="lv_test_theme"
+                         displayName="lv_test_theme"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tests/lv_test_theme/lv_test_theme.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="lv_tutorial" displayName="lv_tutorial" projectFiles="true">
+          <logicalFolder name="0_porting" displayName="0_porting" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/0_porting/lv_tutorial_porting.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="10_keyboard" displayName="10_keyboard" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/10_keyboard/lv_tutorial_keyboard.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="1_hello_world"
+                         displayName="1_hello_world"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/1_hello_world/lv_tutorial_hello_world.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="2_objects" displayName="2_objects" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/2_objects/lv_tutorial_objects.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="3_styles" displayName="3_styles" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/3_styles/lv_tutorial_styles.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="4_themes" displayName="4_themes" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/4_themes/lv_tutorial_themes.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="5_antialiasing"
+                         displayName="5_antialiasing"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/5_antialiasing/lv_tutorial_antialiasing.c</itemPath>
+            <itemPath>lv_examples/lv_tutorial/5_antialiasing/apple_icon_alpha.c</itemPath>
+            <itemPath>lv_examples/lv_tutorial/5_antialiasing/apple_icon_chroma.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="6_images" displayName="6_images" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/6_images/lv_tutorial_images.c</itemPath>
+            <itemPath>lv_examples/lv_tutorial/6_images/red_flower.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="7_fonts" displayName="7_fonts" projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/7_fonts/lv_tutorial_fonts.c</itemPath>
+            <itemPath>lv_examples/lv_tutorial/7_fonts/arial_cyrillic_20.c</itemPath>
+            <itemPath>lv_examples/lv_tutorial/7_fonts/arial_math_20.c</itemPath>
+            <itemPath>lv_examples/lv_tutorial/7_fonts/arial_ascii_20.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="8_animations"
+                         displayName="8_animations"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/8_animations/lv_tutorial_animations.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="9_responsive"
+                         displayName="9_responsive"
+                         projectFiles="true">
+            <itemPath>lv_examples/lv_tutorial/9_responsive/lv_tutorial_responsive.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="lvgl" displayName="lvgl" projectFiles="true">
+        <logicalFolder name="docs" displayName="docs" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="lv_core" displayName="lv_core" projectFiles="true">
+          <itemPath>lvgl/lv_core/lv_group.c</itemPath>
+          <itemPath>lvgl/lv_core/lv_vdb.c</itemPath>
+          <itemPath>lvgl/lv_core/lv_obj.c</itemPath>
+          <itemPath>lvgl/lv_core/lv_style.c</itemPath>
+          <itemPath>lvgl/lv_core/lv_indev.c</itemPath>
+          <itemPath>lvgl/lv_core/lv_refr.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_draw" displayName="lv_draw" projectFiles="true">
+          <itemPath>lvgl/lv_draw/lv_draw_vbasic.c</itemPath>
+          <itemPath>lvgl/lv_draw/lv_draw.c</itemPath>
+          <itemPath>lvgl/lv_draw/lv_draw_rbasic.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_hal" displayName="lv_hal" projectFiles="true">
+          <itemPath>lvgl/lv_hal/lv_hal_indev.c</itemPath>
+          <itemPath>lvgl/lv_hal/lv_hal_tick.c</itemPath>
+          <itemPath>lvgl/lv_hal/lv_hal_disp.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_misc" displayName="lv_misc" projectFiles="true">
+          <logicalFolder name="lv_fonts" displayName="lv_fonts" projectFiles="true">
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_symbol_30.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_40_cyrillic.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_40.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_40_latin_sup.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_symbol_20.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_30_latin_sup.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_20_latin_sup.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_symbol_10.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_symbol_40.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_10.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_30_cyrillic.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_20.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_10_latin_sup.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_20_cyrillic.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_10_cyrillic.c</itemPath>
+            <itemPath>lvgl/lv_misc/lv_fonts/lv_font_dejavu_30.c</itemPath>
+          </logicalFolder>
+          <itemPath>lvgl/lv_misc/lv_font.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_circ.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_area.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_task.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_fs.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_anim.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_mem.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_templ.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_ll.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_color.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_txt.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_math.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_ufs.c</itemPath>
+          <itemPath>lvgl/lv_misc/lv_trigo.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_objx" displayName="lv_objx" projectFiles="true">
+          <itemPath>lvgl/lv_objx/lv_roller.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_ddlist.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_page.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_list.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_ta.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_tabview.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_btn.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_kb.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_bar.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_lmeter.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_cb.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_slider.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_win.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_label.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_line.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_mbox.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_sw.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_led.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_chart.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_img.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_gauge.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_objx_templ.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_btnm.c</itemPath>
+          <itemPath>lvgl/lv_objx/lv_cont.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_themes" displayName="lv_themes" projectFiles="true">
+          <itemPath>lvgl/lv_themes/lv_theme_material.c</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_zen.c</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_alien.c</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_templ.c</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme.c</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_mono.c</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_night.c</itemPath>
+          <itemPath>lvgl/lv_themes/lv_theme_default.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="mcu_drv" displayName="mcu_drv" projectFiles="true">
+        <itemPath>mcu_drv/spi.c</itemPath>
+        <itemPath>mcu_drv/parallel.c</itemPath>
+        <itemPath>mcu_drv/delay.c</itemPath>
+      </logicalFolder>
+      <itemPath>main.c</itemPath>
+      <itemPath>panda.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>lvgl</Elem>
+    <Elem>misc</Elem>
+    <Elem>hw</Elem>
+    <Elem>hal</Elem>
+    <Elem>lv_drivers</Elem>
+    <Elem>mcu_drv</Elem>
+    <Elem>lv_examples</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX695F512H</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>1.44</languageToolchainVersion>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C32>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="true"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+        <appendMe value="-fdata-sections -ffunction-sections"/>
+      </C32>
+      <C32-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C32-AR>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC32asm-list-to-file" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value="_SUPPRESS_PLIB_WARNING"/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="allocate-dinit" value="false"/>
+        <property key="code-dinit" value="false"/>
+        <property key="ebase-addr" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="heap-size" value="0"/>
+        <property key="input-libraries" value=""/>
+        <property key="kseg-length" value=""/>
+        <property key="kseg-origin" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="oXC32ld-extra-opts" value=""/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="serial-length" value=""/>
+        <property key="serial-origin" value=""/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <appendMe value="--gc-sections"/>
+      </C32-LD>
+      <C32CPP>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="check-new" value="false"/>
+        <property key="eh-specs" value="true"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exceptions" value="true"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="rtti" value="true"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32CPP>
+      <C32Global>
+        <property key="common-include-directories" value="."/>
+        <property key="gp-relative-option" value=""/>
+        <property key="legacy-libc" value="true"/>
+        <property key="mdtcm" value=""/>
+        <property key="mitcm" value=""/>
+        <property key="mstacktcm" value="false"/>
+        <property key="relaxed-math" value="false"/>
+        <property key="save-temps" value="false"/>
+        <property key="wpo-lto" value="false"/>
+      </C32Global>
+      <ICD3PlatformTool>
+        <property key="ADC 1" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CHANGE NOTICE" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="ETHERNET CONTROLLER" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C1" value="true"/>
+        <property key="I2C3" value="true"/>
+        <property key="I2C4" value="true"/>
+        <property key="I2C5" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="SPI 2" value="true"/>
+        <property key="SPI 3" value="true"/>
+        <property key="SPI 4" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="UART3" value="true"/>
+        <property key="UART4" value="true"/>
+        <property key="UART5" value="true"/>
+        <property key="UART6" value="true"/>
+        <property key="USB" value="true"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="false"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d07ffff"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges" value=""/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="3.25"/>
+      </ICD3PlatformTool>
+      <PICkit3PlatformTool>
+        <property key="ADC 1" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CHANGE NOTICE" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="ETHERNET CONTROLLER" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C1" value="true"/>
+        <property key="I2C3" value="true"/>
+        <property key="I2C4" value="true"/>
+        <property key="I2C5" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="SPI 2" value="true"/>
+        <property key="SPI 3" value="true"/>
+        <property key="SPI 4" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="UART3" value="true"/>
+        <property key="UART4" value="true"/>
+        <property key="UART5" value="true"/>
+        <property key="UART6" value="true"/>
+        <property key="USB" value="true"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d07ffff"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmertogo.imagename" value=""/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmspeed" value="2"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${programoptions.preservedataflash.ranges}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="3.25"/>
+      </PICkit3PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>

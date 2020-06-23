@@ -1,0 +1,6 @@
+5
+Living Room
+Kitchen
+Bedroom 1
+Bedroom 2
+Bedroom 3

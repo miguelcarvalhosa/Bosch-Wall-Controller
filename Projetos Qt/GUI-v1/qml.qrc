@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>SchedulePage.qml</file>
+        <file>SchedulePageForm.ui.qml</file>
+        <file>AdjustPage.qml</file>
+        <file>AdjustPageForm.ui.qml</file>
+        <file>StatsPage.qml</file>
+        <file>StatsPageForm.ui.qml</file>
+        <file>SettingsPage.qml</file>
+        <file>SettingsPageForm.ui.qml</file>
+        <file>WelcomePage.qml</file>
+        <file>NewUserPage.qml</file>
+        <file>AddUserPage.qml</file>
+        <file>SleepPage.qml</file>
+    </qresource>
+</RCC>

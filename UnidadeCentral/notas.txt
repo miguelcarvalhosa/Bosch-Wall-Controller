@@ -1,0 +1,23 @@
+- Falar com o Karba sobre menu settings (100 %) ;)
+- Implementar settings 					(100 %) :)
+- Fazer txt com estatisticas			(100 %) :)
+- Integrar Reconhecimento facial 		(100 %) :)
+- Integrar UI							(0 %)
+- Integrar MESH							(0 %)
+- Implementar Timeout					(100 %) :)
+- Ler e integrar sensor   				(0 %)
+- Comunicação periódica da temperatura  (70 %)
+- Sistema a correr na Raspberry 		(0 %)
+- Refactoring código Python 			(0 %)
+- Documentação 							(0 %)
+- Implementar estatisticas				(0 %)
+
+
+- Contido no menu das Settings
+
+- utilizador alterar o seu setpoint de temperatura
+- nome da divisão onde está o controlador
+- adiçao de novos utilizadores (máquina de estados)
+- colocar controlador em modo sleep
+
+- Falta receber a temperatura de divisoes diferentes da mesh

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>pic32_config.h</itemPath>
+      <itemPath>lv_conf.h</itemPath>
+      <itemPath>lvgl/lvgl.h</itemPath>
+      <itemPath>RA8875.h</itemPath>
+      <itemPath>delay.h</itemPath>
+      <itemPath>uart.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="lvgl" displayName="lvgl" projectFiles="true">
+      <logicalFolder name=".github" displayName=".github" projectFiles="true">
+        <logicalFolder name="ISSUE_TEMPLATE"
+                       displayName="ISSUE_TEMPLATE"
+                       projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="docs" displayName="docs" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="porting" displayName="porting" projectFiles="true">
+        <itemPath>lvgl/porting/lv_port_disp_template.c</itemPath>
+        <itemPath>lvgl/porting/lv_port_fs_template.c</itemPath>
+        <itemPath>lvgl/porting/lv_port_indev_template.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="scripts" displayName="scripts" projectFiles="true">
+        <logicalFolder name="built_in_font"
+                       displayName="built_in_font"
+                       projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="lv_core" displayName="lv_core" projectFiles="true">
+          <itemPath>lvgl/src/lv_core/lv_debug.c</itemPath>
+          <itemPath>lvgl/src/lv_core/lv_disp.c</itemPath>
+          <itemPath>lvgl/src/lv_core/lv_group.c</itemPath>
+          <itemPath>lvgl/src/lv_core/lv_indev.c</itemPath>
+          <itemPath>lvgl/src/lv_core/lv_obj.c</itemPath>
+          <itemPath>lvgl/src/lv_core/lv_refr.c</itemPath>
+          <itemPath>lvgl/src/lv_core/lv_style.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_draw" displayName="lv_draw" projectFiles="true">
+          <itemPath>lvgl/src/lv_draw/lv_draw.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_draw_arc.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_draw_basic.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_draw_img.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_draw_label.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_draw_line.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_draw_rect.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_draw_triangle.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_img_cache.c</itemPath>
+          <itemPath>lvgl/src/lv_draw/lv_img_decoder.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_font" displayName="lv_font" projectFiles="true">
+          <itemPath>lvgl/src/lv_font/lv_font.c</itemPath>
+          <itemPath>lvgl/src/lv_font/lv_font_fmt_txt.c</itemPath>
+          <itemPath>lvgl/src/lv_font/lv_font_roboto_12.c</itemPath>
+          <itemPath>lvgl/src/lv_font/lv_font_roboto_12_subpx.c</itemPath>
+          <itemPath>lvgl/src/lv_font/lv_font_roboto_16.c</itemPath>
+          <itemPath>lvgl/src/lv_font/lv_font_roboto_22.c</itemPath>
+          <itemPath>lvgl/src/lv_font/lv_font_roboto_28.c</itemPath>
+          <itemPath>lvgl/src/lv_font/lv_font_roboto_28_compressed.c</itemPath>
+          <itemPath>lvgl/src/lv_font/lv_font_unscii_8.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_hal" displayName="lv_hal" projectFiles="true">
+          <itemPath>lvgl/src/lv_hal/lv_hal_disp.c</itemPath>
+          <itemPath>lvgl/src/lv_hal/lv_hal_indev.c</itemPath>
+          <itemPath>lvgl/src/lv_hal/lv_hal_tick.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_misc" displayName="lv_misc" projectFiles="true">
+          <itemPath>lvgl/src/lv_misc/lv_anim.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_area.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_async.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_bidi.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_circ.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_color.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_fs.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_gc.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_ll.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_log.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_math.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_mem.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_printf.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_task.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_templ.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_txt.c</itemPath>
+          <itemPath>lvgl/src/lv_misc/lv_utils.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_objx" displayName="lv_objx" projectFiles="true">
+          <itemPath>lvgl/src/lv_objx/lv_arc.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_bar.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_btn.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_btnm.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_calendar.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_canvas.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_cb.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_chart.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_cont.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_cpicker.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_ddlist.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_gauge.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_img.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_imgbtn.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_kb.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_label.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_led.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_line.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_list.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_lmeter.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_mbox.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_objx_templ.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_page.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_preload.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_roller.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_slider.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_spinbox.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_sw.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_ta.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_table.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_tabview.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_tileview.c</itemPath>
+          <itemPath>lvgl/src/lv_objx/lv_win.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="lv_themes" displayName="lv_themes" projectFiles="true">
+          <itemPath>lvgl/src/lv_themes/lv_theme.c</itemPath>
+          <itemPath>lvgl/src/lv_themes/lv_theme_alien.c</itemPath>
+          <itemPath>lvgl/src/lv_themes/lv_theme_default.c</itemPath>
+          <itemPath>lvgl/src/lv_themes/lv_theme_material.c</itemPath>
+          <itemPath>lvgl/src/lv_themes/lv_theme_mono.c</itemPath>
+          <itemPath>lvgl/src/lv_themes/lv_theme_nemo.c</itemPath>
+          <itemPath>lvgl/src/lv_themes/lv_theme_night.c</itemPath>
+          <itemPath>lvgl/src/lv_themes/lv_theme_templ.c</itemPath>
+          <itemPath>lvgl/src/lv_themes/lv_theme_zen.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main.c</itemPath>
+      <itemPath>RA8875.c</itemPath>
+      <itemPath>delay.c</itemPath>
+      <itemPath>uart.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../Ferramentas PIC32/Useful Files</Elem>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512H</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>PICkit3PlatformTool</platformTool>
+        <languageToolchain>XC32</languageToolchain>
+        <languageToolchainVersion>2.10</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="PIC32MX_DFP" vendor="Microchip" version="1.1.215"/>
+      </packs>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C32>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32>
+      <C32-AR>
+        <property key="additional-options-chop-files" value="false"/>
+      </C32-AR>
+      <C32-AS>
+        <property key="assembler-symbols" value=""/>
+        <property key="enable-symbols" value="true"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="false-conditionals" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="list-source" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="oXC32asm-list-to-file" value="false"/>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warning-level" value=""/>
+      </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+      </C32-CO>
+      <C32-LD>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="additional-options-write-sla" value="false"/>
+        <property key="allocate-dinit" value="false"/>
+        <property key="code-dinit" value="false"/>
+        <property key="ebase-addr" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="heap-size" value=""/>
+        <property key="input-libraries" value=""/>
+        <property key="kseg-length" value=""/>
+        <property key="kseg-origin" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
+        <property key="no-device-startup-code" value="false"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="oXC32ld-extra-opts" value=""/>
+        <property key="optimization-level" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="serial-length" value=""/>
+        <property key="serial-origin" value=""/>
+        <property key="stack-size" value=""/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C32-LD>
+      <C32CPP>
+        <property key="additional-warnings" value="false"/>
+        <property key="addresss-attribute-use" value="false"/>
+        <property key="check-new" value="false"/>
+        <property key="eh-specs" value="true"/>
+        <property key="enable-app-io" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="exceptions" value="true"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="generate-micro-compressed-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="rtti" value="true"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="toplevel-reordering" value=""/>
+        <property key="unaligned-access" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="use-indirect-calls" value="false"/>
+      </C32CPP>
+      <C32Global>
+        <property key="common-include-directories" value=""/>
+        <property key="gp-relative-option" value=""/>
+        <property key="legacy-libc" value="true"/>
+        <property key="mdtcm" value=""/>
+        <property key="mitcm" value=""/>
+        <property key="mstacktcm" value="false"/>
+        <property key="relaxed-math" value="false"/>
+        <property key="save-temps" value="false"/>
+        <property key="wpo-lto" value="false"/>
+      </C32Global>
+      <PICkit3PlatformTool>
+        <property key="ADC 1" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CAN1" value="true"/>
+        <property key="CAN2" value="true"/>
+        <property key="CHANGE NOTICE" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="DMA" value="true"/>
+        <property key="ETHERNET CONTROLLER" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C1" value="true"/>
+        <property key="I2C3" value="true"/>
+        <property key="I2C4" value="true"/>
+        <property key="I2C5" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INTERRUPT CONTROL" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="REAL TIME CLOCK" value="true"/>
+        <property key="SPI 2" value="true"/>
+        <property key="SPI 3" value="true"/>
+        <property key="SPI 4" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="UART1" value="true"/>
+        <property key="UART2" value="true"/>
+        <property key="UART3" value="true"/>
+        <property key="UART4" value="true"/>
+        <property key="UART5" value="true"/>
+        <property key="UART6" value="true"/>
+        <property key="USB" value="true"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d07ffff"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmertogo.imagename" value=""/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmspeed" value="2"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${programoptions.preservedataflash.ranges}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="3.25"/>
+      </PICkit3PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>
