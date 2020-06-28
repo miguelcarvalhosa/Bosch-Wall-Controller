@@ -11,7 +11,7 @@ Descrito de forma sintetizada, trata-se de um controlador que permite fazer um a
 
 ## Documentação
 
-Toda a documentação desenvolvida para este projeto encontra-se [aqui](https://l.facebook.com/l.php?u=https%3A%2F%2Fuapt33090-my.sharepoint.com%2F%3Af%3A%2Fg%2Fpersonal%2Ftania_s_ferreira_ua_pt%2FEsBj3CeFHpNJgQ_ectW-LGsBVEvg0_znVbfWN7Y5KujqeQ%3Fe%3DtvfFny%26fbclid%3DIwAR3L3L73wiRKMtnyJ1j0Yr4Ct-DrlPSFrAteiVxtTHoMnsdn3HsACjWj0P8&h=AT3XRrOttAKqdZbomwXcq7Til2ME5fmBgBqf5jCb51pavPi_kJ7OKEuG86F8E0vmi-9pHjQEq5gb7ytAJ5JIFWEr_7AoCjuNbrvp1ZMtfXKs4lt1z0uTC_ll6paW6PjJuys).
+Toda a documentação desenvolvida para este projeto encontra-se [aqui](https://uapt33090-my.sharepoint.com/:f:/g/personal/tania_s_ferreira_ua_pt/EsBj3CeFHpNJgQ_ectW-LGsBVEvg0_znVbfWN7Y5KujqeQ?e=tvfFny).
 
 
 ## Autores
