@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/bootloader
+/home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/bootloader.rule
+/home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/bootloader-complete.rule
+/home/osboxes/esp/ble_mesh/Kitchen/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/osboxes/esp/ble_mesh/Kitchen/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/osboxes/esp/ble_mesh/Kitchen/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/osboxes/esp/ble_mesh/Kitchen/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/osboxes/esp/ble_mesh/Kitchen/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/osboxes/esp/ble_mesh/Kitchen/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/osboxes/esp/ble_mesh/Kitchen/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

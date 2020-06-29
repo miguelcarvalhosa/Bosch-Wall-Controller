@@ -1,0 +1,55 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ 
+Build flags: -mlongcalls;-Wno-frame-address
+Id flags:  
+
+The output was:
+1
+xtensa-esp32-elf-g++: error: CMakeCXXCompilerId.cpp: No such file or directory
+xtensa-esp32-elf-g++: fatal error: no input files
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ 
+Build flags: -mlongcalls;-Wno-frame-address
+Id flags:  
+
+The output was:
+1
+/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/ld: cannot open output file a.out: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/osboxes/esp/node_relay/build/bootloader/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_f7901"
+ninja: error: unknown target 'cmTC_f7901'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/osboxes/esp/node_relay/build/bootloader/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_ce9d5"
+[1/2] Building C object CMakeFiles/cmTC_ce9d5.dir/CMakeCCompilerABI.c.obj
+FAILED: CMakeFiles/cmTC_ce9d5.dir/CMakeCCompilerABI.c.obj 
+/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address -o CMakeFiles/cmTC_ce9d5.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Assembler messages:
+Fatal error: can't create CMakeFiles/cmTC_ce9d5.dir/CMakeCCompilerABI.c.obj: No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/osboxes/esp/node_relay/build/bootloader/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_dc040"
+[1/2] Building C object CMakeFiles/cmTC_dc040.dir/testCCompiler.c.obj
+FAILED: CMakeFiles/cmTC_dc040.dir/testCCompiler.c.obj 
+/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address -o CMakeFiles/cmTC_dc040.dir/testCCompiler.c.obj   -c testCCompiler.c
+cc1: fatal error: testCCompiler.c: No such file or directory
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
