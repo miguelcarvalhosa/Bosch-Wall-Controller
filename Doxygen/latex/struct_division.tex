@@ -1,0 +1,51 @@
+\hypertarget{struct_division}{}\doxysection{Division Struct Reference}
+\label{struct_division}\index{Division@{Division}}
+
+
+Estrutura com os dados de uma divisão.  
+
+
+
+
+{\ttfamily \#include $<$central\+Unit.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_division_aa8363052d7d19330ba67f61650dbbf36}\label{struct_division_aa8363052d7d19330ba67f61650dbbf36}} 
+char \mbox{\hyperlink{struct_division_aa8363052d7d19330ba67f61650dbbf36}{name}} \mbox{[}\mbox{\hyperlink{central_unit_8h_a330403d34112e4e8e72fb9be17c6ac45}{M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+D\+I\+V\+I\+S\+I\+O\+N\+\_\+\+N\+A\+ME}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Nome da divisão. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_division_a6c5a4b2ff8871b638cda554ed5bb50cf}\label{struct_division_a6c5a4b2ff8871b638cda554ed5bb50cf}} 
+float \mbox{\hyperlink{struct_division_a6c5a4b2ff8871b638cda554ed5bb50cf}{cur\+Setpoint}}
+\begin{DoxyCompactList}\small\item\em Setpoint atual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_division_ad85697240ec80a563a97c568949720eb}\label{struct_division_ad85697240ec80a563a97c568949720eb}} 
+float \mbox{\hyperlink{struct_division_ad85697240ec80a563a97c568949720eb}{cur\+Temperature}}
+\begin{DoxyCompactList}\small\item\em Temperatura atual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_division_a5d9ad15e47f863ad56d02ceb850e745d}\label{struct_division_a5d9ad15e47f863ad56d02ceb850e745d}} 
+bool \mbox{\hyperlink{struct_division_a5d9ad15e47f863ad56d02ceb850e745d}{enable\+Setpoint}}
+\begin{DoxyCompactList}\small\item\em Ativação do setpoint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_division_a65d9ee3555cf64752cbbfadee6896e55}\label{struct_division_a65d9ee3555cf64752cbbfadee6896e55}} 
+time\+\_\+t \mbox{\hyperlink{struct_division_a65d9ee3555cf64752cbbfadee6896e55}{start\+\_\+time}} \mbox{[}\mbox{\hyperlink{central_unit_8h_ad5b60043ab50f646bcc758cffcf7178c}{D\+A\+Y\+S\+\_\+\+O\+F\+\_\+\+T\+H\+E\+\_\+\+W\+E\+EK}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array (para uma semana) com o início de cada atuação pré-\/programada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_division_ad74cfbb8283babc96b5529c18ac68099}\label{struct_division_ad74cfbb8283babc96b5529c18ac68099}} 
+time\+\_\+t \mbox{\hyperlink{struct_division_ad74cfbb8283babc96b5529c18ac68099}{stop\+\_\+time}} \mbox{[}\mbox{\hyperlink{central_unit_8h_ad5b60043ab50f646bcc758cffcf7178c}{D\+A\+Y\+S\+\_\+\+O\+F\+\_\+\+T\+H\+E\+\_\+\+W\+E\+EK}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array (para uma semana) com o fim de cada atuação pré-\/programada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_division_ace55e56872275c6d1c88d4eef1e82bfb}\label{struct_division_ace55e56872275c6d1c88d4eef1e82bfb}} 
+bool \mbox{\hyperlink{struct_division_ace55e56872275c6d1c88d4eef1e82bfb}{time\+Is\+Valid}} \mbox{[}\mbox{\hyperlink{central_unit_8h_ad5b60043ab50f646bcc758cffcf7178c}{D\+A\+Y\+S\+\_\+\+O\+F\+\_\+\+T\+H\+E\+\_\+\+W\+E\+EK}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array (para uma semana) com a ativação da pré-\/programação. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_division_af00415d96ce583e8bd97765614aa60ce}\label{struct_division_af00415d96ce583e8bd97765614aa60ce}} 
+float \mbox{\hyperlink{struct_division_af00415d96ce583e8bd97765614aa60ce}{sch\+\_\+setpoint}} \mbox{[}\mbox{\hyperlink{central_unit_8h_ad5b60043ab50f646bcc758cffcf7178c}{D\+A\+Y\+S\+\_\+\+O\+F\+\_\+\+T\+H\+E\+\_\+\+W\+E\+EK}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array (para uma semana) com o setpoint da pré-\/programação. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_division_a014398d6a464d2d8fca7b9db1c117b54}\label{struct_division_a014398d6a464d2d8fca7b9db1c117b54}} 
+bool \mbox{\hyperlink{struct_division_a014398d6a464d2d8fca7b9db1c117b54}{sch\+\_\+actuating}} \mbox{[}\mbox{\hyperlink{central_unit_8h_ad5b60043ab50f646bcc758cffcf7178c}{D\+A\+Y\+S\+\_\+\+O\+F\+\_\+\+T\+H\+E\+\_\+\+W\+E\+EK}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array (para uma semana) com a informação acerca da atuação devido à pré-\/programação. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Estrutura com os dados de uma divisão. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/micae/\+Desktop/\+P\+I\+\_\+\+Final/\+Projetos Qt/\+G\+U\+I-\/v1/\mbox{\hyperlink{central_unit_8h}{central\+Unit.\+h}}\end{DoxyCompactItemize}

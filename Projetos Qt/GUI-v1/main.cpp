@@ -820,7 +820,7 @@ int itgr_sens_getTemperature(void) {
 int  itgr_sens_readSonar(void) {
     int retval = 0;
     double distance = gl_sonar.distance(30000);
-	if(distance < MIN_DETECT_DISTANCE && distance > 1) {
+	if(distance < MAX_DETECT_DISTANCE && distance > 1) {
         retval = 1;
 		printf("[SENS] Utilizador Detetado\n");
 	}

@@ -1,0 +1,845 @@
+\hypertarget{central_unit_8h}{}\doxysection{C\+:/\+Users/micae/\+Desktop/\+P\+I\+\_\+\+Final/\+Projetos Qt/\+G\+U\+I-\/v1/central\+Unit.h File Reference}
+\label{central_unit_8h}\index{C:/Users/micae/Desktop/PI\_Final/Projetos Qt/GUI-\/v1/centralUnit.h@{C:/Users/micae/Desktop/PI\_Final/Projetos Qt/GUI-\/v1/centralUnit.h}}
+
+
+Unidade central de processamento do sistema.  
+
+
+{\ttfamily \#include $<$python2.\+7/\+Python.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lib\+Sonar.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_user}{User}}
+\begin{DoxyCompactList}\small\item\em Estrutura com os dados de um utilizador. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_division}{Division}}
+\begin{DoxyCompactList}\small\item\em Estrutura com os dados de uma divisão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{central_unit_8h_ac9efdaac9411d0868b715edccca3269d}\label{central_unit_8h_ac9efdaac9411d0868b715edccca3269d}} 
+\#define {\bfseries P\+Y\+\_\+\+S\+S\+I\+Z\+E\+\_\+\+T\+\_\+\+C\+L\+E\+AN}
+\item 
+\mbox{\Hypertarget{central_unit_8h_a918304a47d57a948d2d720bac424eb53}\label{central_unit_8h_a918304a47d57a948d2d720bac424eb53}} 
+\#define \mbox{\hyperlink{central_unit_8h_a918304a47d57a948d2d720bac424eb53}{C\+O\+N\+F\+I\+R\+M\+\_\+\+U\+S\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT}}~10
+\begin{DoxyCompactList}\small\item\em Timeout do menu confirm user (em segundos) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a09e090ff4323dfcf8d26598faef60178}\label{central_unit_8h_a09e090ff4323dfcf8d26598faef60178}} 
+\#define \mbox{\hyperlink{central_unit_8h_a09e090ff4323dfcf8d26598faef60178}{I\+N\+S\+E\+R\+T\+\_\+\+U\+S\+E\+R\+\_\+\+T\+I\+M\+E\+O\+UT}}~120
+\begin{DoxyCompactList}\small\item\em Timeout do menu insert user (em segundos) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_af0619de03b8d24adfa7eee66726eb2ce}\label{central_unit_8h_af0619de03b8d24adfa7eee66726eb2ce}} 
+\#define \mbox{\hyperlink{central_unit_8h_af0619de03b8d24adfa7eee66726eb2ce}{S\+Y\+S\+T\+E\+M\+\_\+\+T\+I\+M\+E\+O\+UT}}~300
+\begin{DoxyCompactList}\small\item\em Timeout do sistema (em segundos) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_aef579de3960fd16f3a43a1da84312854}\label{central_unit_8h_aef579de3960fd16f3a43a1da84312854}} 
+\#define \mbox{\hyperlink{central_unit_8h_aef579de3960fd16f3a43a1da84312854}{M\+A\+X\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+U\+S\+E\+RS}}~20
+\begin{DoxyCompactList}\small\item\em Número máximo de utilizadores. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a79a54d37b5f05b0d8bb02e8dc2a8672a}\label{central_unit_8h_a79a54d37b5f05b0d8bb02e8dc2a8672a}} 
+\#define \mbox{\hyperlink{central_unit_8h_a79a54d37b5f05b0d8bb02e8dc2a8672a}{M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+U\+S\+E\+R\+\_\+\+N\+A\+ME}}~20
+\begin{DoxyCompactList}\small\item\em Tamanho máximo do nome do utilizador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a330403d34112e4e8e72fb9be17c6ac45}\label{central_unit_8h_a330403d34112e4e8e72fb9be17c6ac45}} 
+\#define \mbox{\hyperlink{central_unit_8h_a330403d34112e4e8e72fb9be17c6ac45}{M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+D\+I\+V\+I\+S\+I\+O\+N\+\_\+\+N\+A\+ME}}~20
+\begin{DoxyCompactList}\small\item\em Tamanho máximo do nome da divisão. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_ad5b60043ab50f646bcc758cffcf7178c}\label{central_unit_8h_ad5b60043ab50f646bcc758cffcf7178c}} 
+\#define \mbox{\hyperlink{central_unit_8h_ad5b60043ab50f646bcc758cffcf7178c}{D\+A\+Y\+S\+\_\+\+O\+F\+\_\+\+T\+H\+E\+\_\+\+W\+E\+EK}}~7
+\begin{DoxyCompactList}\small\item\em Número de dias da semana. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a6062290e6729c7f34c5fcfbe07df5db3}\label{central_unit_8h_a6062290e6729c7f34c5fcfbe07df5db3}} 
+\#define \mbox{\hyperlink{central_unit_8h_a6062290e6729c7f34c5fcfbe07df5db3}{M\+A\+X\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+V\+I\+S\+I\+O\+NS}}~10
+\begin{DoxyCompactList}\small\item\em Número máximo de divisões. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a00e6dc17ccb6b48142364cca293537a2}\label{central_unit_8h_a00e6dc17ccb6b48142364cca293537a2}} 
+\#define \mbox{\hyperlink{central_unit_8h_a00e6dc17ccb6b48142364cca293537a2}{T\+E\+M\+P\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+T\+I\+ME}}~60
+\begin{DoxyCompactList}\small\item\em Período de amostragem do sensor de temperatura (em segundos) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_ad6ae5e803d7acb8f7d2f2f9d2be3c6f0}\label{central_unit_8h_ad6ae5e803d7acb8f7d2f2f9d2be3c6f0}} 
+\#define \mbox{\hyperlink{central_unit_8h_ad6ae5e803d7acb8f7d2f2f9d2be3c6f0}{M\+A\+X\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+D\+I\+S\+T\+A\+N\+CE}}~10
+\begin{DoxyCompactList}\small\item\em Distância máxima para que o utilizador seja detetado pelo sonar (em cm) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a9a392498234e3844d614e1768cc15407}\label{central_unit_8h_a9a392498234e3844d614e1768cc15407}} 
+\#define \mbox{\hyperlink{central_unit_8h_a9a392498234e3844d614e1768cc15407}{S\+O\+N\+A\+R\+\_\+\+T\+R\+I\+G\+G\+E\+R\+\_\+\+P\+IN}}~4
+\begin{DoxyCompactList}\small\item\em Pino da Raspberry Pi -\/ G\+P\+I\+O-\/23. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a7c3963e2259c77e10dfc8ab16cd1196b}\label{central_unit_8h_a7c3963e2259c77e10dfc8ab16cd1196b}} 
+\#define \mbox{\hyperlink{central_unit_8h_a7c3963e2259c77e10dfc8ab16cd1196b}{S\+O\+N\+A\+R\+\_\+\+E\+C\+H\+O\+\_\+\+P\+IN}}~5
+\begin{DoxyCompactList}\small\item\em Pino da Raspberry Pi -\/ G\+P\+I\+O-\/24. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a661d236dd49f3aef3a2cf46cf6a1405e}\label{central_unit_8h_a661d236dd49f3aef3a2cf46cf6a1405e}} 
+\#define \mbox{\hyperlink{central_unit_8h_a661d236dd49f3aef3a2cf46cf6a1405e}{D\+H\+T\+\_\+\+P\+IN}}~3
+\begin{DoxyCompactList}\small\item\em Pino da Raspberry Pi -\/ G\+P\+I\+O-\/22. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a2afd731b1b8528a3ccfb40a5657bd1c8}\label{central_unit_8h_a2afd731b1b8528a3ccfb40a5657bd1c8}} 
+\#define \mbox{\hyperlink{central_unit_8h_a2afd731b1b8528a3ccfb40a5657bd1c8}{U\+S\+E\+R\+S\+\_\+\+F\+I\+L\+E\+\_\+\+P\+A\+TH}}~\char`\"{}/home/pi/users.\+txt\char`\"{}
+\begin{DoxyCompactList}\small\item\em Path para o ficheiro com a informação dos utilizadores. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a0509569eb184135a35d9a939dea55d5b}\label{central_unit_8h_a0509569eb184135a35d9a939dea55d5b}} 
+\#define \mbox{\hyperlink{central_unit_8h_a0509569eb184135a35d9a939dea55d5b}{D\+I\+V\+I\+S\+I\+O\+N\+S\+\_\+\+F\+I\+L\+E\+\_\+\+P\+A\+TH}}~\char`\"{}/home/pi/divisions.\+txt\char`\"{}
+\begin{DoxyCompactList}\small\item\em Path para o ficheiro com a informação das divisões. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_user}{User}} \mbox{\hyperlink{central_unit_8h_aebb0f8a8bd00b8afba0e5abcf5b559c7}{User}}
+\begin{DoxyCompactList}\small\item\em Estrutura com os dados de um utilizador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{central_unit_8h_aa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t}} \{ \newline
+{\bfseries st\+\_\+sleep}, 
+{\bfseries st\+\_\+recognition}, 
+{\bfseries st\+\_\+confirm\+User}, 
+{\bfseries st\+\_\+create\+User}, 
+\newline
+{\bfseries st\+\_\+modify\+Setpoint}, 
+{\bfseries st\+\_\+menus}
+ \}
+\begin{DoxyCompactList}\small\item\em Estados da maquina de estados principal. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} \{ \newline
+{\bfseries st\+\_\+create\+User\+\_\+validation}, 
+{\bfseries st\+\_\+create\+User\+\_\+insert}, 
+{\bfseries st\+\_\+create\+User\+\_\+capture}, 
+{\bfseries st\+\_\+create\+User\+\_\+process}, 
+\newline
+{\bfseries st\+\_\+create\+User\+\_\+end}
+ \}
+\begin{DoxyCompactList}\small\item\em Estados da maquina de estados de func\+\_\+create\+User. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{central_unit_8h_afb3ce131b483cf3cd5536cc2bdfd4cc1}{ui\+\_\+menu\+\_\+t}} \{ \newline
+{\bfseries m\+\_\+sleep}, 
+{\bfseries m\+\_\+confirm\+User}, 
+{\bfseries m\+\_\+validation}, 
+{\bfseries m\+\_\+add\+User}, 
+\newline
+{\bfseries m\+\_\+adjust\+Temperature}, 
+{\bfseries m\+\_\+stats}, 
+{\bfseries m\+\_\+schedule}, 
+{\bfseries m\+\_\+settings}
+ \}
+\begin{DoxyCompactList}\small\item\em Menus da UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{central_unit_8h_ae7d8374ff9dcf56629583541fec5b0c3}{process\+\_\+event}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar eventos e ativar flags. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_aeb8920c858bdcecb527214bd2bd737b3}{process\+\_\+state}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que processa a maquina de estados principal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a72a8c1a254b21d2108f2153bf3d2f2a9}{process\+\_\+mesh\+\_\+events}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que processa as mensagens recebidas pela mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_af63c5cf02f30fbae2ffe85cf64c2e659}{func\+\_\+sleep}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado st\+\_\+sleep. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a6bf4d52fb7e2863f6fd123810ee34539}{func\+\_\+recognition}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado st\+\_\+recognition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a9829b74f834f59f31e25da5da510a389}{func\+\_\+confirm\+User}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado de st\+\_\+confirm\+User. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_ae971614893d1cd2e94a2a85acf4d21c2}{func\+\_\+modify\+Setpoint}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado composto de st\+\_\+create\+User. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_adb24dd1b8cc58e910b5e73c922dcef9e}{func\+\_\+create\+User}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado composto de st\+\_\+menus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a57e7173ccffb831112e34bb15f179690}{func\+\_\+menus}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado composto de st\+\_\+menus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a516faffc63dda4492265a6e233760c35}{itgr\+\_\+ui\+\_\+change\+Menu}} (\mbox{\hyperlink{central_unit_8h_afb3ce131b483cf3cd5536cc2bdfd4cc1}{ui\+\_\+menu\+\_\+t}} menu)
+\begin{DoxyCompactList}\small\item\em Funcao para alterar o menu atual da UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a551acfdebacabae0b52324fc8b3104c8}{itgr\+\_\+ui\+\_\+adjust\+Temperature}} (bool $\ast$changed)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado de informacao de temperaturas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_ac625f377d73710916a10c88fbde4bdc2}{itgr\+\_\+ui\+\_\+schedule}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado de configuracao previa das temperaturas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a08ccedf6ccd663eccd2b749dbd923aae}{itgr\+\_\+ui\+\_\+stats}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para processar o estado de informacao de configuracao fl\+\_\+manual da temperatura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a0f674c934355289e2467a768090f01e0}{itgr\+\_\+ui\+\_\+get\+New\+User\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para atualizar a estrutura gl\+\_\+user com base nos dados lidos da UI. Adiciona um novo utilizador ao sistema. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{central_unit_8h_a748b7a912e03367b2dd76fcf7bfb366f}{itgr\+\_\+ui\+\_\+get\+User\+Setpoint}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao para receber o novo setpoint introduzido por um utilizador na UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a2e5716a740d38cb460271cb8c74d8b57}{itgr\+\_\+ui\+\_\+set\+Temperature}} (bool $\ast$changed)
+\begin{DoxyCompactList}\small\item\em Funcao para dar update a temperatura atual da divisao na UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_aa398b4b8d9be8ddeb866d78c7f9665bd}{itgr\+\_\+ui\+\_\+set\+Setpoint}} (bool $\ast$changed)
+\begin{DoxyCompactList}\small\item\em Funcao para dar update ao setpoint de qualquer divisao na UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a3d57adbda4cc2842973c980ac9a482da}{itgr\+\_\+ui\+\_\+set\+Disable}} (bool $\ast$changed)
+\begin{DoxyCompactList}\small\item\em Funcao para dar disable de qualquer divisao na UI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} \mbox{\hyperlink{central_unit_8h_a83f0dd1cdf93b49bb998399b74c1e3ab}{func\+\_\+create\+User\+\_\+validation}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que identifca a intenção do utilizador se registar no sistema. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} \mbox{\hyperlink{central_unit_8h_af697d30256ec5b2dacf90861f6ed90db}{func\+\_\+create\+User\+\_\+insert}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que recebe os dados (nome e setpoint predefinido) de um novo utilizador. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} \mbox{\hyperlink{central_unit_8h_a265a5ef27e4c99a99a0db02bf8eb70bb}{func\+\_\+create\+User\+\_\+capture}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que captura imagens de um novo utilizador. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} \mbox{\hyperlink{central_unit_8h_a9b88dfaa71a91c0802f48590ca234e32}{func\+\_\+create\+User\+\_\+process}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que processa as imagens de um novo utilizador. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} \mbox{\hyperlink{central_unit_8h_a1043dfd2278a3b5b02f8ad771fe36d49}{func\+\_\+create\+User\+\_\+end}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que termina o processo de adição de um novo utilizador ao sistema. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{central_unit_8h_a348dffc0f0114bb1973491098a5962f3}{itgr\+\_\+recog\+\_\+get\+Name}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que executa o algoritmo de reconhecimento facial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_ae37890c2b9f59bcee60125e38e2ce784}{itgr\+\_\+recog\+\_\+take\+Photos}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao bloqueante para tirar fotos ao utilizador que esta a ser criado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_ab5974333261af8f5e9ac5ffc7476ca83}{itgr\+\_\+recog\+\_\+process\+Photos}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao bloqueante para criar o classificador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a087b34e665069393148d8a6bd8474056}{itgr\+\_\+mesh\+\_\+check\+Schedule}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que processa o schedule e envia para a mesh sinais de ativar/desativar o sistema de climatizacao. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_af8d6c5d67683367a65f807e48757fdda}{itgr\+\_\+mesh\+\_\+set\+Setpoint}} (float setpoint)
+\begin{DoxyCompactList}\small\item\em Funcao que envia para a rede mesh uma alteracao do setpoint baseado no utilizador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_ab0550b8411882f92e0360be346b0bdf8}{itgr\+\_\+mesh\+\_\+set\+Setpoint}} (bool $\ast$changed)
+\begin{DoxyCompactList}\small\item\em Funcao que envia para a rede mesh uma alteracao de setpoints. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{central_unit_8h_a22c2d70a565ebe9ce9d0b1d06cdb433c}{itgr\+\_\+mesh\+\_\+get\+Setpoint}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que recebe um setpoint da rede mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_aa389b4c3a3a4c1ed57590a5dbb46a616}{itgr\+\_\+mesh\+\_\+set\+Temperature}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que da update a temperatura atual da divisao na rede mesh. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{central_unit_8h_aa93baa5db2451342ddf9ac96f44ae6be}{itgr\+\_\+mesh\+\_\+get\+Temperature}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que recebe uma temperatura da rede mesh. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{central_unit_8h_aa15165e51902ac07c221b077abe0b0af}{itgr\+\_\+mesh\+\_\+get\+Disable}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que recebe o estado O\+FF da rede mesh. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{central_unit_8h_a85141e95f5bc782569d26e3c7c5e28e2}{itgr\+\_\+sens\+\_\+get\+Temperature}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que lê o sensor de temperatura. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{central_unit_8h_a88c92798afa3c99c2d6bc9f5ced5115c}{itgr\+\_\+sens\+\_\+read\+Sonar}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que le o sonar e caso um utilizador esteja proximo, ativa fl\+\_\+user\+Detected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_ac1e5cbd94c25c2d00c5bbb4e894c4b5f}{aux\+\_\+init\+System}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que inicia o sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_af186520f65b7bc71af9272826fa253fe}{aux\+\_\+load\+Users}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que lê do ficheiro .txt. Carrega os setpoints para a estrutura gl\+\_\+user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a14bceb51da1c6b2072317ef685169f46}{aux\+\_\+update\+Users}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que atualiza o ficheiro .txt com os dados dos utilizadores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a4d4cec059682a5bfc8b4171f08f482eb}{aux\+\_\+load\+Divisions}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que lê do ficheiro .txt. Carrega as divisiões para a estrutura gl\+\_\+division. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{central_unit_8h_a6cc3cba7c9ec83fc5c79bacff4ca8c0c}{aux\+\_\+set\+Time}} (int year, int mon, int day, int hour, int min, int sec)
+\begin{DoxyCompactList}\small\item\em Funcao que devolve o tempo do tipo time\+\_\+t baseado nos parametros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{central_unit_8h_a783eb872e23fe80cac1999b3fdec9b93}{aux\+\_\+read\+Dht\+Data}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que devolve a temperatura atual lida pelo sensor D\+HT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_ac5e5fe48e7ae8d9439a5ff1e5cba4cc9}{aux\+\_\+print\+Days\+Of\+The\+Week}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que informa o utilizador sobre o numero de dias da semana. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{central_unit_8h_a9def6cfcc88e75c6a59242a233e1dc5b}{getch}} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que le um char do terminal de forma bloqueante. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{central_unit_8h_a91af5fcea3bd8cdf518c08e18efa4283}{putstr}} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Funcao que imprime a string str. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{central_unit_8h_a477da773b92329d39786e04c080d8533}\label{central_unit_8h_a477da773b92329d39786e04c080d8533}} 
+volatile int \mbox{\hyperlink{central_unit_8h_a477da773b92329d39786e04c080d8533}{fl\+\_\+mesh\+\_\+received\+Temp}}
+\begin{DoxyCompactList}\small\item\em Temperatura recebida da rede mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_ae33d2c442369800c6a4b98951cfcf5b3}\label{central_unit_8h_ae33d2c442369800c6a4b98951cfcf5b3}} 
+volatile int \mbox{\hyperlink{central_unit_8h_ae33d2c442369800c6a4b98951cfcf5b3}{fl\+\_\+mesh\+\_\+received\+Setpoint}}
+\begin{DoxyCompactList}\small\item\em Setpoint recebido da rede mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a0ba445997a44285cf54dd5aa4959a2b1}\label{central_unit_8h_a0ba445997a44285cf54dd5aa4959a2b1}} 
+volatile int \mbox{\hyperlink{central_unit_8h_a0ba445997a44285cf54dd5aa4959a2b1}{fl\+\_\+mesh\+\_\+received\+Off}}
+\begin{DoxyCompactList}\small\item\em O\+N/\+O\+FF recebido da rede mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_a288b310ecaae0aa3e7e8c9000e7d23aa}\label{central_unit_8h_a288b310ecaae0aa3e7e8c9000e7d23aa}} 
+int \mbox{\hyperlink{central_unit_8h_a288b310ecaae0aa3e7e8c9000e7d23aa}{gl\+\_\+this\+Division}}
+\begin{DoxyCompactList}\small\item\em Indíce da divisão atual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{central_unit_8h_ab2bea9dff2ba17c908f3a0d1e62aae63}\label{central_unit_8h_ab2bea9dff2ba17c908f3a0d1e62aae63}} 
+\mbox{\hyperlink{struct_division}{Division}} \mbox{\hyperlink{central_unit_8h_ab2bea9dff2ba17c908f3a0d1e62aae63}{gl\+\_\+division}} \mbox{[}\mbox{\hyperlink{central_unit_8h_a6062290e6729c7f34c5fcfbe07df5db3}{M\+A\+X\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+V\+I\+S\+I\+O\+NS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array do tipo \mbox{\hyperlink{struct_division}{Division}} com M\+A\+X\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+V\+I\+S\+I\+O\+NS posições. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unidade central de processamento do sistema. 
+
+\begin{DoxyAuthor}{Author}
+Miguel Carvalhosa (\href{mailto:miguelcarvalhosa@ua.pt}{\texttt{ miguelcarvalhosa@ua.\+pt}}) 
+
+Hugo Leal (\href{mailto:micaelleal1@ua.pt}{\texttt{ micaelleal1@ua.\+pt}}) 
+
+Fransico Pinto (\href{mailto:fpinto@ua.pt}{\texttt{ fpinto@ua.\+pt}}) 
+
+Tânia Ferreira (\href{mailto:tania.s.ferreira@ua.pt}{\texttt{ tania.\+s.\+ferreira@ua.\+pt}}) 
+
+Gonçalo Cardoso (\href{mailto:gnvcardoso@ua.pt}{\texttt{ gnvcardoso@ua.\+pt}}) ~\newline
+ 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{central_unit_8h_aebb0f8a8bd00b8afba0e5abcf5b559c7}\label{central_unit_8h_aebb0f8a8bd00b8afba0e5abcf5b559c7}} 
+\index{centralUnit.h@{centralUnit.h}!User@{User}}
+\index{User@{User}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{User}{User}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_user}{User}} \mbox{\hyperlink{struct_user}{User}}}
+
+
+
+Estrutura com os dados de um utilizador. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}\label{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}} 
+\index{centralUnit.h@{centralUnit.h}!state\_createUser\_t@{state\_createUser\_t}}
+\index{state\_createUser\_t@{state\_createUser\_t}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{state\_createUser\_t}{state\_createUser\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}}}
+
+
+
+Estados da maquina de estados de func\+\_\+create\+User. 
+
+\mbox{\Hypertarget{central_unit_8h_aa0aafed44fec19806d8f9ad834be1248}\label{central_unit_8h_aa0aafed44fec19806d8f9ad834be1248}} 
+\index{centralUnit.h@{centralUnit.h}!state\_t@{state\_t}}
+\index{state\_t@{state\_t}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{state\_t}{state\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{central_unit_8h_aa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t}}}
+
+
+
+Estados da maquina de estados principal. 
+
+\mbox{\Hypertarget{central_unit_8h_afb3ce131b483cf3cd5536cc2bdfd4cc1}\label{central_unit_8h_afb3ce131b483cf3cd5536cc2bdfd4cc1}} 
+\index{centralUnit.h@{centralUnit.h}!ui\_menu\_t@{ui\_menu\_t}}
+\index{ui\_menu\_t@{ui\_menu\_t}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{ui\_menu\_t}{ui\_menu\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{central_unit_8h_afb3ce131b483cf3cd5536cc2bdfd4cc1}{ui\+\_\+menu\+\_\+t}}}
+
+
+
+Menus da UI. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{central_unit_8h_ac1e5cbd94c25c2d00c5bbb4e894c4b5f}\label{central_unit_8h_ac1e5cbd94c25c2d00c5bbb4e894c4b5f}} 
+\index{centralUnit.h@{centralUnit.h}!aux\_initSystem@{aux\_initSystem}}
+\index{aux\_initSystem@{aux\_initSystem}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{aux\_initSystem()}{aux\_initSystem()}}
+{\footnotesize\ttfamily void aux\+\_\+init\+System (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que inicia o sistema. 
+
+\mbox{\Hypertarget{central_unit_8h_a4d4cec059682a5bfc8b4171f08f482eb}\label{central_unit_8h_a4d4cec059682a5bfc8b4171f08f482eb}} 
+\index{centralUnit.h@{centralUnit.h}!aux\_loadDivisions@{aux\_loadDivisions}}
+\index{aux\_loadDivisions@{aux\_loadDivisions}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{aux\_loadDivisions()}{aux\_loadDivisions()}}
+{\footnotesize\ttfamily void aux\+\_\+load\+Divisions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que lê do ficheiro .txt. Carrega as divisiões para a estrutura gl\+\_\+division. 
+
+\mbox{\Hypertarget{central_unit_8h_af186520f65b7bc71af9272826fa253fe}\label{central_unit_8h_af186520f65b7bc71af9272826fa253fe}} 
+\index{centralUnit.h@{centralUnit.h}!aux\_loadUsers@{aux\_loadUsers}}
+\index{aux\_loadUsers@{aux\_loadUsers}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{aux\_loadUsers()}{aux\_loadUsers()}}
+{\footnotesize\ttfamily void aux\+\_\+load\+Users (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que lê do ficheiro .txt. Carrega os setpoints para a estrutura gl\+\_\+user. 
+
+\mbox{\Hypertarget{central_unit_8h_ac5e5fe48e7ae8d9439a5ff1e5cba4cc9}\label{central_unit_8h_ac5e5fe48e7ae8d9439a5ff1e5cba4cc9}} 
+\index{centralUnit.h@{centralUnit.h}!aux\_printDaysOfTheWeek@{aux\_printDaysOfTheWeek}}
+\index{aux\_printDaysOfTheWeek@{aux\_printDaysOfTheWeek}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{aux\_printDaysOfTheWeek()}{aux\_printDaysOfTheWeek()}}
+{\footnotesize\ttfamily void aux\+\_\+print\+Days\+Of\+The\+Week (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que informa o utilizador sobre o numero de dias da semana. 
+
+\mbox{\Hypertarget{central_unit_8h_a783eb872e23fe80cac1999b3fdec9b93}\label{central_unit_8h_a783eb872e23fe80cac1999b3fdec9b93}} 
+\index{centralUnit.h@{centralUnit.h}!aux\_readDhtData@{aux\_readDhtData}}
+\index{aux\_readDhtData@{aux\_readDhtData}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{aux\_readDhtData()}{aux\_readDhtData()}}
+{\footnotesize\ttfamily int aux\+\_\+read\+Dht\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que devolve a temperatura atual lida pelo sensor D\+HT. 
+
+\begin{DoxyReturn}{Returns}
+Temperetatura lida pelo sensor D\+HT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_a6cc3cba7c9ec83fc5c79bacff4ca8c0c}\label{central_unit_8h_a6cc3cba7c9ec83fc5c79bacff4ca8c0c}} 
+\index{centralUnit.h@{centralUnit.h}!aux\_setTime@{aux\_setTime}}
+\index{aux\_setTime@{aux\_setTime}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{aux\_setTime()}{aux\_setTime()}}
+{\footnotesize\ttfamily time\+\_\+t aux\+\_\+set\+Time (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{mon,  }\item[{int}]{day,  }\item[{int}]{hour,  }\item[{int}]{min,  }\item[{int}]{sec }\end{DoxyParamCaption})}
+
+
+
+Funcao que devolve o tempo do tipo time\+\_\+t baseado nos parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & Ano. \\
+\hline
+{\em mon} & Mês. \\
+\hline
+{\em day} & Dia. \\
+\hline
+{\em hour} & Hora. \\
+\hline
+{\em min} & Minuto. \\
+\hline
+{\em sec} & Segundo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{central_unit_8h_a14bceb51da1c6b2072317ef685169f46}\label{central_unit_8h_a14bceb51da1c6b2072317ef685169f46}} 
+\index{centralUnit.h@{centralUnit.h}!aux\_updateUsers@{aux\_updateUsers}}
+\index{aux\_updateUsers@{aux\_updateUsers}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{aux\_updateUsers()}{aux\_updateUsers()}}
+{\footnotesize\ttfamily void aux\+\_\+update\+Users (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que atualiza o ficheiro .txt com os dados dos utilizadores. 
+
+\mbox{\Hypertarget{central_unit_8h_a9829b74f834f59f31e25da5da510a389}\label{central_unit_8h_a9829b74f834f59f31e25da5da510a389}} 
+\index{centralUnit.h@{centralUnit.h}!func\_confirmUser@{func\_confirmUser}}
+\index{func\_confirmUser@{func\_confirmUser}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_confirmUser()}{func\_confirmUser()}}
+{\footnotesize\ttfamily void func\+\_\+confirm\+User (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado de st\+\_\+confirm\+User. 
+
+\mbox{\Hypertarget{central_unit_8h_adb24dd1b8cc58e910b5e73c922dcef9e}\label{central_unit_8h_adb24dd1b8cc58e910b5e73c922dcef9e}} 
+\index{centralUnit.h@{centralUnit.h}!func\_createUser@{func\_createUser}}
+\index{func\_createUser@{func\_createUser}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_createUser()}{func\_createUser()}}
+{\footnotesize\ttfamily void func\+\_\+create\+User (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado composto de st\+\_\+menus. 
+
+\mbox{\Hypertarget{central_unit_8h_a265a5ef27e4c99a99a0db02bf8eb70bb}\label{central_unit_8h_a265a5ef27e4c99a99a0db02bf8eb70bb}} 
+\index{centralUnit.h@{centralUnit.h}!func\_createUser\_capture@{func\_createUser\_capture}}
+\index{func\_createUser\_capture@{func\_createUser\_capture}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_createUser\_capture()}{func\_createUser\_capture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} func\+\_\+create\+User\+\_\+capture (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que captura imagens de um novo utilizador. 
+
+\begin{DoxyReturn}{Returns}
+Próximo estado da F\+SM create\+\_\+user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_a1043dfd2278a3b5b02f8ad771fe36d49}\label{central_unit_8h_a1043dfd2278a3b5b02f8ad771fe36d49}} 
+\index{centralUnit.h@{centralUnit.h}!func\_createUser\_end@{func\_createUser\_end}}
+\index{func\_createUser\_end@{func\_createUser\_end}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_createUser\_end()}{func\_createUser\_end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} func\+\_\+create\+User\+\_\+end (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que termina o processo de adição de um novo utilizador ao sistema. 
+
+\begin{DoxyReturn}{Returns}
+Próximo estado da F\+SM create\+\_\+user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_af697d30256ec5b2dacf90861f6ed90db}\label{central_unit_8h_af697d30256ec5b2dacf90861f6ed90db}} 
+\index{centralUnit.h@{centralUnit.h}!func\_createUser\_insert@{func\_createUser\_insert}}
+\index{func\_createUser\_insert@{func\_createUser\_insert}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_createUser\_insert()}{func\_createUser\_insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} func\+\_\+create\+User\+\_\+insert (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que recebe os dados (nome e setpoint predefinido) de um novo utilizador. 
+
+\begin{DoxyReturn}{Returns}
+Próximo estado da F\+SM create\+\_\+user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_a9b88dfaa71a91c0802f48590ca234e32}\label{central_unit_8h_a9b88dfaa71a91c0802f48590ca234e32}} 
+\index{centralUnit.h@{centralUnit.h}!func\_createUser\_process@{func\_createUser\_process}}
+\index{func\_createUser\_process@{func\_createUser\_process}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_createUser\_process()}{func\_createUser\_process()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} func\+\_\+create\+User\+\_\+process (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que processa as imagens de um novo utilizador. 
+
+\begin{DoxyReturn}{Returns}
+Próximo estado da F\+SM create\+\_\+user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_a83f0dd1cdf93b49bb998399b74c1e3ab}\label{central_unit_8h_a83f0dd1cdf93b49bb998399b74c1e3ab}} 
+\index{centralUnit.h@{centralUnit.h}!func\_createUser\_validation@{func\_createUser\_validation}}
+\index{func\_createUser\_validation@{func\_createUser\_validation}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_createUser\_validation()}{func\_createUser\_validation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{central_unit_8h_a61b42eaaaefd194c77e816eeffd33202}{state\+\_\+create\+User\+\_\+t}} func\+\_\+create\+User\+\_\+validation (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que identifca a intenção do utilizador se registar no sistema. 
+
+\begin{DoxyReturn}{Returns}
+Próximo estado da F\+SM create\+\_\+user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_a57e7173ccffb831112e34bb15f179690}\label{central_unit_8h_a57e7173ccffb831112e34bb15f179690}} 
+\index{centralUnit.h@{centralUnit.h}!func\_menus@{func\_menus}}
+\index{func\_menus@{func\_menus}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_menus()}{func\_menus()}}
+{\footnotesize\ttfamily void func\+\_\+menus (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado composto de st\+\_\+menus. 
+
+\mbox{\Hypertarget{central_unit_8h_ae971614893d1cd2e94a2a85acf4d21c2}\label{central_unit_8h_ae971614893d1cd2e94a2a85acf4d21c2}} 
+\index{centralUnit.h@{centralUnit.h}!func\_modifySetpoint@{func\_modifySetpoint}}
+\index{func\_modifySetpoint@{func\_modifySetpoint}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_modifySetpoint()}{func\_modifySetpoint()}}
+{\footnotesize\ttfamily void func\+\_\+modify\+Setpoint (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado composto de st\+\_\+create\+User. 
+
+\mbox{\Hypertarget{central_unit_8h_a6bf4d52fb7e2863f6fd123810ee34539}\label{central_unit_8h_a6bf4d52fb7e2863f6fd123810ee34539}} 
+\index{centralUnit.h@{centralUnit.h}!func\_recognition@{func\_recognition}}
+\index{func\_recognition@{func\_recognition}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_recognition()}{func\_recognition()}}
+{\footnotesize\ttfamily void func\+\_\+recognition (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado st\+\_\+recognition. 
+
+\mbox{\Hypertarget{central_unit_8h_af63c5cf02f30fbae2ffe85cf64c2e659}\label{central_unit_8h_af63c5cf02f30fbae2ffe85cf64c2e659}} 
+\index{centralUnit.h@{centralUnit.h}!func\_sleep@{func\_sleep}}
+\index{func\_sleep@{func\_sleep}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{func\_sleep()}{func\_sleep()}}
+{\footnotesize\ttfamily void func\+\_\+sleep (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado st\+\_\+sleep. 
+
+\mbox{\Hypertarget{central_unit_8h_a9def6cfcc88e75c6a59242a233e1dc5b}\label{central_unit_8h_a9def6cfcc88e75c6a59242a233e1dc5b}} 
+\index{centralUnit.h@{centralUnit.h}!getch@{getch}}
+\index{getch@{getch}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{getch()}{getch()}}
+{\footnotesize\ttfamily char getch (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que le um char do terminal de forma bloqueante. 
+
+\mbox{\Hypertarget{central_unit_8h_a087b34e665069393148d8a6bd8474056}\label{central_unit_8h_a087b34e665069393148d8a6bd8474056}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_mesh\_checkSchedule@{itgr\_mesh\_checkSchedule}}
+\index{itgr\_mesh\_checkSchedule@{itgr\_mesh\_checkSchedule}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_mesh\_checkSchedule()}{itgr\_mesh\_checkSchedule()}}
+{\footnotesize\ttfamily void itgr\+\_\+mesh\+\_\+check\+Schedule (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que processa o schedule e envia para a mesh sinais de ativar/desativar o sistema de climatizacao. 
+
+\mbox{\Hypertarget{central_unit_8h_aa15165e51902ac07c221b077abe0b0af}\label{central_unit_8h_aa15165e51902ac07c221b077abe0b0af}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_mesh\_getDisable@{itgr\_mesh\_getDisable}}
+\index{itgr\_mesh\_getDisable@{itgr\_mesh\_getDisable}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_mesh\_getDisable()}{itgr\_mesh\_getDisable()}}
+{\footnotesize\ttfamily int itgr\+\_\+mesh\+\_\+get\+Disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que recebe o estado O\+FF da rede mesh. 
+
+\begin{DoxyReturn}{Returns}
+Estado do atuador da divisão \textbackslash{}revtal 0 Atuador desligado \textbackslash{}revtal 1 Atuador ligado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_a22c2d70a565ebe9ce9d0b1d06cdb433c}\label{central_unit_8h_a22c2d70a565ebe9ce9d0b1d06cdb433c}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_mesh\_getSetpoint@{itgr\_mesh\_getSetpoint}}
+\index{itgr\_mesh\_getSetpoint@{itgr\_mesh\_getSetpoint}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_mesh\_getSetpoint()}{itgr\_mesh\_getSetpoint()}}
+{\footnotesize\ttfamily int itgr\+\_\+mesh\+\_\+get\+Setpoint (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que recebe um setpoint da rede mesh. 
+
+\begin{DoxyReturn}{Returns}
+Valor do setpoint recebido através da rede mesh 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_aa93baa5db2451342ddf9ac96f44ae6be}\label{central_unit_8h_aa93baa5db2451342ddf9ac96f44ae6be}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_mesh\_getTemperature@{itgr\_mesh\_getTemperature}}
+\index{itgr\_mesh\_getTemperature@{itgr\_mesh\_getTemperature}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_mesh\_getTemperature()}{itgr\_mesh\_getTemperature()}}
+{\footnotesize\ttfamily int itgr\+\_\+mesh\+\_\+get\+Temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que recebe uma temperatura da rede mesh. 
+
+\begin{DoxyReturn}{Returns}
+Valor de temperatura recebido através da rede mesh. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_ab0550b8411882f92e0360be346b0bdf8}\label{central_unit_8h_ab0550b8411882f92e0360be346b0bdf8}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_mesh\_setSetpoint@{itgr\_mesh\_setSetpoint}}
+\index{itgr\_mesh\_setSetpoint@{itgr\_mesh\_setSetpoint}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_mesh\_setSetpoint()}{itgr\_mesh\_setSetpoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void itgr\+\_\+mesh\+\_\+set\+Setpoint (\begin{DoxyParamCaption}\item[{bool $\ast$}]{changed }\end{DoxyParamCaption})}
+
+
+
+Funcao que envia para a rede mesh uma alteracao de setpoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$changed} & Ponteiro para um array com gl\+\_\+total\+Divisions posições em que as posições com valor \textquotesingle{}1\textquotesingle{} correspondem a alterações de setpoint. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{central_unit_8h_af8d6c5d67683367a65f807e48757fdda}\label{central_unit_8h_af8d6c5d67683367a65f807e48757fdda}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_mesh\_setSetpoint@{itgr\_mesh\_setSetpoint}}
+\index{itgr\_mesh\_setSetpoint@{itgr\_mesh\_setSetpoint}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_mesh\_setSetpoint()}{itgr\_mesh\_setSetpoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void itgr\+\_\+mesh\+\_\+set\+Setpoint (\begin{DoxyParamCaption}\item[{float}]{setpoint }\end{DoxyParamCaption})}
+
+
+
+Funcao que envia para a rede mesh uma alteracao do setpoint baseado no utilizador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setpoint} & Setpoint do utilizador reconhecido facialmente pelo sistema. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{central_unit_8h_aa389b4c3a3a4c1ed57590a5dbb46a616}\label{central_unit_8h_aa389b4c3a3a4c1ed57590a5dbb46a616}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_mesh\_setTemperature@{itgr\_mesh\_setTemperature}}
+\index{itgr\_mesh\_setTemperature@{itgr\_mesh\_setTemperature}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_mesh\_setTemperature()}{itgr\_mesh\_setTemperature()}}
+{\footnotesize\ttfamily void itgr\+\_\+mesh\+\_\+set\+Temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que da update a temperatura atual da divisao na rede mesh. 
+
+\mbox{\Hypertarget{central_unit_8h_a348dffc0f0114bb1973491098a5962f3}\label{central_unit_8h_a348dffc0f0114bb1973491098a5962f3}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_recog\_getName@{itgr\_recog\_getName}}
+\index{itgr\_recog\_getName@{itgr\_recog\_getName}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_recog\_getName()}{itgr\_recog\_getName()}}
+{\footnotesize\ttfamily int itgr\+\_\+recog\+\_\+get\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que executa o algoritmo de reconhecimento facial. 
+
+\begin{DoxyReturn}{Returns}
+Id do utilizador ou -\/1 caso o utilizador seja desconhecido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_ab5974333261af8f5e9ac5ffc7476ca83}\label{central_unit_8h_ab5974333261af8f5e9ac5ffc7476ca83}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_recog\_processPhotos@{itgr\_recog\_processPhotos}}
+\index{itgr\_recog\_processPhotos@{itgr\_recog\_processPhotos}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_recog\_processPhotos()}{itgr\_recog\_processPhotos()}}
+{\footnotesize\ttfamily void itgr\+\_\+recog\+\_\+process\+Photos (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao bloqueante para criar o classificador. 
+
+\mbox{\Hypertarget{central_unit_8h_ae37890c2b9f59bcee60125e38e2ce784}\label{central_unit_8h_ae37890c2b9f59bcee60125e38e2ce784}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_recog\_takePhotos@{itgr\_recog\_takePhotos}}
+\index{itgr\_recog\_takePhotos@{itgr\_recog\_takePhotos}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_recog\_takePhotos()}{itgr\_recog\_takePhotos()}}
+{\footnotesize\ttfamily void itgr\+\_\+recog\+\_\+take\+Photos (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao bloqueante para tirar fotos ao utilizador que esta a ser criado. 
+
+\mbox{\Hypertarget{central_unit_8h_a85141e95f5bc782569d26e3c7c5e28e2}\label{central_unit_8h_a85141e95f5bc782569d26e3c7c5e28e2}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_sens\_getTemperature@{itgr\_sens\_getTemperature}}
+\index{itgr\_sens\_getTemperature@{itgr\_sens\_getTemperature}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_sens\_getTemperature()}{itgr\_sens\_getTemperature()}}
+{\footnotesize\ttfamily int itgr\+\_\+sens\+\_\+get\+Temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que lê o sensor de temperatura. 
+
+\begin{DoxyReturn}{Returns}
+Alteração da temperatura. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & gl\+\_\+division\mbox{[}gl\+\_\+this\+Division\mbox{]}.cur\+Temperature foi alterado \\
+\hline
+{\em 0} & gl\+\_\+division\mbox{[}gl\+\_\+this\+Division\mbox{]}.cur\+Temperature não foi alterado \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{central_unit_8h_a88c92798afa3c99c2d6bc9f5ced5115c}\label{central_unit_8h_a88c92798afa3c99c2d6bc9f5ced5115c}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_sens\_readSonar@{itgr\_sens\_readSonar}}
+\index{itgr\_sens\_readSonar@{itgr\_sens\_readSonar}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_sens\_readSonar()}{itgr\_sens\_readSonar()}}
+{\footnotesize\ttfamily int itgr\+\_\+sens\+\_\+read\+Sonar (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que le o sonar e caso um utilizador esteja proximo, ativa fl\+\_\+user\+Detected. 
+
+\begin{DoxyReturn}{Returns}
+Utilizador detetado. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & Utilizador a menos de M\+A\+X\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+D\+I\+S\+T\+A\+N\+CE cm. \\
+\hline
+{\em 0} & Utilizador não detetado. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{central_unit_8h_a551acfdebacabae0b52324fc8b3104c8}\label{central_unit_8h_a551acfdebacabae0b52324fc8b3104c8}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_adjustTemperature@{itgr\_ui\_adjustTemperature}}
+\index{itgr\_ui\_adjustTemperature@{itgr\_ui\_adjustTemperature}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_adjustTemperature()}{itgr\_ui\_adjustTemperature()}}
+{\footnotesize\ttfamily void itgr\+\_\+ui\+\_\+adjust\+Temperature (\begin{DoxyParamCaption}\item[{bool $\ast$}]{changed }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado de informacao de temperaturas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$changed} & Ponteiro para um array com gl\+\_\+total\+Divisions posições em que as posições com valor \textquotesingle{}1\textquotesingle{} correspondem a alterações da temperatura. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{central_unit_8h_a516faffc63dda4492265a6e233760c35}\label{central_unit_8h_a516faffc63dda4492265a6e233760c35}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_changeMenu@{itgr\_ui\_changeMenu}}
+\index{itgr\_ui\_changeMenu@{itgr\_ui\_changeMenu}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_changeMenu()}{itgr\_ui\_changeMenu()}}
+{\footnotesize\ttfamily void itgr\+\_\+ui\+\_\+change\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{central_unit_8h_afb3ce131b483cf3cd5536cc2bdfd4cc1}{ui\+\_\+menu\+\_\+t}}}]{menu }\end{DoxyParamCaption})}
+
+
+
+Funcao para alterar o menu atual da UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & Menu da UI para o qual se quer alterar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{central_unit_8h_a0f674c934355289e2467a768090f01e0}\label{central_unit_8h_a0f674c934355289e2467a768090f01e0}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_getNewUserData@{itgr\_ui\_getNewUserData}}
+\index{itgr\_ui\_getNewUserData@{itgr\_ui\_getNewUserData}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_getNewUserData()}{itgr\_ui\_getNewUserData()}}
+{\footnotesize\ttfamily void itgr\+\_\+ui\+\_\+get\+New\+User\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para atualizar a estrutura gl\+\_\+user com base nos dados lidos da UI. Adiciona um novo utilizador ao sistema. 
+
+\mbox{\Hypertarget{central_unit_8h_a748b7a912e03367b2dd76fcf7bfb366f}\label{central_unit_8h_a748b7a912e03367b2dd76fcf7bfb366f}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_getUserSetpoint@{itgr\_ui\_getUserSetpoint}}
+\index{itgr\_ui\_getUserSetpoint@{itgr\_ui\_getUserSetpoint}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_getUserSetpoint()}{itgr\_ui\_getUserSetpoint()}}
+{\footnotesize\ttfamily float itgr\+\_\+ui\+\_\+get\+User\+Setpoint (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para receber o novo setpoint introduzido por um utilizador na UI. 
+
+\begin{DoxyReturn}{Returns}
+Setpoint introduzido pelo utilizador ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{central_unit_8h_ac625f377d73710916a10c88fbde4bdc2}\label{central_unit_8h_ac625f377d73710916a10c88fbde4bdc2}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_schedule@{itgr\_ui\_schedule}}
+\index{itgr\_ui\_schedule@{itgr\_ui\_schedule}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_schedule()}{itgr\_ui\_schedule()}}
+{\footnotesize\ttfamily void itgr\+\_\+ui\+\_\+schedule (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado de configuracao previa das temperaturas. 
+
+\mbox{\Hypertarget{central_unit_8h_a3d57adbda4cc2842973c980ac9a482da}\label{central_unit_8h_a3d57adbda4cc2842973c980ac9a482da}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_setDisable@{itgr\_ui\_setDisable}}
+\index{itgr\_ui\_setDisable@{itgr\_ui\_setDisable}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_setDisable()}{itgr\_ui\_setDisable()}}
+{\footnotesize\ttfamily void itgr\+\_\+ui\+\_\+set\+Disable (\begin{DoxyParamCaption}\item[{bool $\ast$}]{changed }\end{DoxyParamCaption})}
+
+
+
+Funcao para dar disable de qualquer divisao na UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$changed} & Ponteiro para um array com gl\+\_\+total\+Divisions posições em que as posições com valor \textquotesingle{}1\textquotesingle{} correspondem a alterações da temperatura. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{central_unit_8h_aa398b4b8d9be8ddeb866d78c7f9665bd}\label{central_unit_8h_aa398b4b8d9be8ddeb866d78c7f9665bd}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_setSetpoint@{itgr\_ui\_setSetpoint}}
+\index{itgr\_ui\_setSetpoint@{itgr\_ui\_setSetpoint}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_setSetpoint()}{itgr\_ui\_setSetpoint()}}
+{\footnotesize\ttfamily void itgr\+\_\+ui\+\_\+set\+Setpoint (\begin{DoxyParamCaption}\item[{bool $\ast$}]{changed }\end{DoxyParamCaption})}
+
+
+
+Funcao para dar update ao setpoint de qualquer divisao na UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$changed} & Ponteiro para um array com gl\+\_\+total\+Divisions posições em que as posições com valor \textquotesingle{}1\textquotesingle{} correspondem a alterações da temperatura. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{central_unit_8h_a2e5716a740d38cb460271cb8c74d8b57}\label{central_unit_8h_a2e5716a740d38cb460271cb8c74d8b57}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_setTemperature@{itgr\_ui\_setTemperature}}
+\index{itgr\_ui\_setTemperature@{itgr\_ui\_setTemperature}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_setTemperature()}{itgr\_ui\_setTemperature()}}
+{\footnotesize\ttfamily void itgr\+\_\+ui\+\_\+set\+Temperature (\begin{DoxyParamCaption}\item[{bool $\ast$}]{changed }\end{DoxyParamCaption})}
+
+
+
+Funcao para dar update a temperatura atual da divisao na UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$changed} & Ponteiro para um array com gl\+\_\+total\+Divisions posições em que as posições com valor \textquotesingle{}1\textquotesingle{} correspondem a alterações da temperatura. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{central_unit_8h_a08ccedf6ccd663eccd2b749dbd923aae}\label{central_unit_8h_a08ccedf6ccd663eccd2b749dbd923aae}} 
+\index{centralUnit.h@{centralUnit.h}!itgr\_ui\_stats@{itgr\_ui\_stats}}
+\index{itgr\_ui\_stats@{itgr\_ui\_stats}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{itgr\_ui\_stats()}{itgr\_ui\_stats()}}
+{\footnotesize\ttfamily void itgr\+\_\+ui\+\_\+stats (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar o estado de informacao de configuracao fl\+\_\+manual da temperatura. 
+
+\mbox{\Hypertarget{central_unit_8h_ae7d8374ff9dcf56629583541fec5b0c3}\label{central_unit_8h_ae7d8374ff9dcf56629583541fec5b0c3}} 
+\index{centralUnit.h@{centralUnit.h}!process\_event@{process\_event}}
+\index{process\_event@{process\_event}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{process\_event()}{process\_event()}}
+{\footnotesize\ttfamily void process\+\_\+event (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao para processar eventos e ativar flags. 
+
+\mbox{\Hypertarget{central_unit_8h_a72a8c1a254b21d2108f2153bf3d2f2a9}\label{central_unit_8h_a72a8c1a254b21d2108f2153bf3d2f2a9}} 
+\index{centralUnit.h@{centralUnit.h}!process\_mesh\_events@{process\_mesh\_events}}
+\index{process\_mesh\_events@{process\_mesh\_events}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{process\_mesh\_events()}{process\_mesh\_events()}}
+{\footnotesize\ttfamily void process\+\_\+mesh\+\_\+events (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que processa as mensagens recebidas pela mesh. 
+
+\mbox{\Hypertarget{central_unit_8h_aeb8920c858bdcecb527214bd2bd737b3}\label{central_unit_8h_aeb8920c858bdcecb527214bd2bd737b3}} 
+\index{centralUnit.h@{centralUnit.h}!process\_state@{process\_state}}
+\index{process\_state@{process\_state}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{process\_state()}{process\_state()}}
+{\footnotesize\ttfamily void process\+\_\+state (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcao que processa a maquina de estados principal. 
+
+\mbox{\Hypertarget{central_unit_8h_a91af5fcea3bd8cdf518c08e18efa4283}\label{central_unit_8h_a91af5fcea3bd8cdf518c08e18efa4283}} 
+\index{centralUnit.h@{centralUnit.h}!putstr@{putstr}}
+\index{putstr@{putstr}!centralUnit.h@{centralUnit.h}}
+\doxysubsubsection{\texorpdfstring{putstr()}{putstr()}}
+{\footnotesize\ttfamily void putstr (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Funcao que imprime a string str. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$str} & String a imprimir no terminal. ~\newline
+ \\
+\hline
+\end{DoxyParams}
