@@ -49,6 +49,8 @@ int 	 gl_thisDivision = 0;
 
 Sonar 	 gl_sonar;
 
+QApplication* appP;
+
 
 /************************************Main**************************************/
 using namespace std;
@@ -61,6 +63,7 @@ int main(int argc, char *argv[]) {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QApplication app(argc, argv);
+    appP = &app;
 
     // Registo da classe BackEnd
     qmlRegisterSingletonType<BackEnd>("backend", 1, 0, "BackEnd", &BackEnd::qmlInstance);
@@ -588,6 +591,8 @@ state_createUser_t func_createUser_insert(void) {
 
 state_createUser_t func_createUser_capture(void) {
     state_createUser_t nextState;
+    backend->setEncoding(1);
+    (*appP).processEvents();
     putstr("Estado st_createUser_capture\n");
     itgr_recog_takePhotos();
     nextState = st_createUser_process;
@@ -596,6 +601,10 @@ state_createUser_t func_createUser_capture(void) {
 
 state_createUser_t func_createUser_process(void) {
     state_createUser_t nextState;
+    backend->setEncoding(2);
+    for(int i=0; i<1E4; i++){
+        (*appP).processEvents();
+    }
     putstr("Estado st_createUser_process\n");
     itgr_recog_processPhotos();
     nextState = st_createUser_end;
@@ -604,6 +613,8 @@ state_createUser_t func_createUser_process(void) {
 
 state_createUser_t func_createUser_end(void) {
     state_createUser_t nextState;
+    backend->setEncoding(0);
+    (*appP).processEvents();
     putstr("Estado st_createUser_end\n");
     nextState = st_createUser_validation;
     itgr_ui_changeMenu(m_sleep);

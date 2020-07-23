@@ -95,6 +95,11 @@ class BackEnd : public QObject
      */
     Q_PROPERTY(int settingsButtons WRITE setSettingsButtons)
 
+    /*
+     * Propriedade para avisar o frontend quando o backend termina o encoding das imagens
+     */
+    Q_PROPERTY(int encoding READ getEncoding NOTIFY encodingChanged)
+
 
 public:
     static BackEnd *instance();
@@ -242,6 +247,16 @@ public:
      */
     void setSettingsButtons(int buttons);
 
+    /*
+     * Função para indicar ao frontend o estado do processo de encoding
+     */
+    int getEncoding();
+
+    /*
+     * Função para atualizar o estado do processo de encoding
+     */
+    void setEncoding(int val);
+
 
 signals:
     /*
@@ -278,6 +293,11 @@ signals:
      * Função para sinalizar ao frontend que foi efetuada uma alteração no valor de temperatura associado ao utilizador que foi reconhecido
      */
     void welcomeTemperatureChanged();
+
+    /*
+     * Função que permite sinalizar ao frontend quando termina o processo de encoding
+     */
+    void encodingChanged();
 
 
 private:
@@ -332,6 +352,14 @@ private:
     int newUserTemperature;
 
     int changeUserTemperature;
+
+    /*
+     * Valor do estado do encoding.
+     * 0 -> encoding concluido
+     * 1 -> captura de imagens
+     * 2 -> processamento das imagens
+     */
+    int encodingState = 0;
 
 
     explicit BackEnd(QObject *parent = nullptr);

@@ -386,3 +386,15 @@ void BackEnd::setSettingsButtons(int buttons) {
     }
 }
 
+
+int BackEnd::getEncoding() {
+    return encodingState;
+    printf("\nfoo\n");
+}
+
+
+void BackEnd::setEncoding(int val) {
+    encodingState = val;
+    encodingChanged();
+}
+

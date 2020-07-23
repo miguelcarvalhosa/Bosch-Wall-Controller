@@ -7,6 +7,20 @@ Item {
     width: 800
     height: 407
 
+    property var encodingState: BackEnd.encoding
+    property var encodingStr: ""
+    onEncodingStateChanged: {
+        if(encodingState === 0) {
+            encodingStr = ""
+        }
+        else if(encodingState === 1) {
+            encodingStr = "Capturing images..."
+        }
+        else if(encodingState === 2) {
+            encodingStr = "Adding user to the system..."
+        }
+    }
+
     Row {
         id: row
         width: 800
@@ -86,19 +100,34 @@ Item {
                 BackEnd.newUserName = nameField.text
                 BackEnd.newUserTemperature = temperatureInput.value
                 BackEnd.newUserButtons = 3
-                busyIndicator.running = true;
+                //busyIndicator.running = true;
             }
         }
     }
 
-    BusyIndicator {
+    Text {
+        id: element3
+        x: 261
+        y: 160
+        //text: qsTr("Adding user to the system...")
+        text: encodingStr
+        anchors.topMargin: 350
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        verticalAlignment: Text.AlignVCenter
+        font.pixelSize: 16
+        font.family: "Arial"
+        horizontalAlignment: Text.AlignHCenter
+    }
+
+    /*BusyIndicator {
         id: busyIndicator
         x: 132
         anchors.top: buttonRow.bottom
         anchors.topMargin: 0
         anchors.horizontalCenter: parent.horizontalCenter
         running: false
-    }
+    }*/
 
 
 
@@ -107,6 +136,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:6;anchors_y:254}D{i:8;anchors_y:265}
+    D{i:6;anchors_y:254}
 }
 ##^##*/
