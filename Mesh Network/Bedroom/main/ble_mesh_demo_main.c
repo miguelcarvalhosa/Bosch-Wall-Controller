@@ -30,7 +30,7 @@
 
 #define UART_NUM UART_NUM_1
 #define TXD (GPIO_NUM_4)
-#define RXD (GPIO_NUM_5)
+#define RXD (GPIO_NUM_2)
 #define RTS (UART_PIN_NO_CHANGE)
 #define CTS (UART_PIN_NO_CHANGE)
 
@@ -68,7 +68,7 @@ nvs_handle_t mem_handle;
 
 /* information about the provisioner used */
 static uint8_t dev_uuid[ESP_BLE_MESH_OCTET16_LEN] = {0x32, 0x10};
-uint16_t start_addr = 0x0003;
+uint16_t start_addr = 0x0002;
 uint16_t self_addr;
 static uint8_t msg_tid = 0x0;
 
@@ -332,7 +332,7 @@ static void esp_ble_mesh_save_node(uint16_t addr)
     node[index].name[10] = '\0';
     node[index].set = 1;
     node[index].state = onoff_server.state.onoff;
-    node[index].temperature = 20;
+    node[index].temperature = 25;
     node_count++;
 }
 
@@ -342,7 +342,7 @@ static void publish_temp(void)
     uint8_t index = self_addr - start_addr;
 
     uint8_t d[13] = {(self_addr & 0xff), (self_addr >> 8), node[index].temperature};
-    for (i = 0; i < 11; i++)
+    for (i = 0; i < 10; i++)
     {
         if (*node[index].name != '\0')
         {
@@ -447,18 +447,6 @@ static void send_temp_update_to_raspberry(uint8_t index)
     char temp = node[index].temperature + 48;
     uart_write_bytes(UART_NUM, (const char *)&temp, 1);
 }
-
-static void send_abc_update_to_raspberry(uint8_t index)
-{
-    char data[4] = "bgn";
-    uart_write_bytes(UART_NUM, (const char *)&data, 3);
-    char code = 1 + 48;
-    uart_write_bytes(UART_NUM, (const char *)&code, 1);
-    uart_write_bytes(UART_NUM, (const char *)&node[index].name, 10);
-    char temp = node[index].temperature + 48;
-    uart_write_bytes(UART_NUM, (const char *)&temp, 1);
-}
-
 static void send_state_update_to_raspberry(uint8_t index)
 {
     char data[4] = "bgn";
@@ -468,6 +456,16 @@ static void send_state_update_to_raspberry(uint8_t index)
     uart_write_bytes(UART_NUM, (const char *)&node[index].name, 10);
     char state = node[index].state + 48;
     uart_write_bytes(UART_NUM, (const char *)&state, 1);
+}
+static void send_setpoint_to_raspberry(uint8_t index)
+{
+    char data[4] = "bgn";
+    uart_write_bytes(UART_NUM, (const char *)&data, 3);
+    char code = 1 + 48;
+    uart_write_bytes(UART_NUM, (const char *)&code, 1);
+    uart_write_bytes(UART_NUM, (const char *)&node[index].name, 10);
+    char temp = node[index].setpoint + 48;
+    uart_write_bytes(UART_NUM, (const char *)&temp, 1);
 }
 
 static void esp_ble_mesh_process_set_node_temp(void)
@@ -480,9 +478,8 @@ static void esp_ble_mesh_process_set_node_temp(void)
         node[index].setpoint = frame.value;
         node[index].state = ON;
         ESP_LOGI("mesh operation", "set temperature setpoint to %d", node[index].setpoint);
-        publish_temp();
-        publish_state(ON);
-        send_temp_update_to_raspberry(index);
+        
+	publish_state(ON);
         send_state_update_to_raspberry(index);
 
         err = nvs_open("storage", NVS_READWRITE, &mem_handle);
@@ -873,6 +870,7 @@ static void ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event,
             index = self_addr - start_addr;
 
             onoff_server.state.onoff = ON;
+	    node[index].state = ON;
             ESP_LOGI("", "------  RECEIVED TEMPERATURE SET MESSAGE ------ ");
             ESP_LOGI("", "msg ttl            : %d", param->model_operation.ctx->recv_ttl);
             ESP_LOGI("", "node address       : 0x%04x", node[index].addr);
@@ -889,8 +887,7 @@ static void ble_mesh_custom_model_cb(esp_ble_mesh_model_cb_event_t event,
             publish_state(ON);
             publish_temp();
             send_state_update_to_raspberry(index);
-            send_abc_update_to_raspberry(index);
-
+	    send_setpoint_to_raspberry(index);
             err = nvs_open("storage", NVS_READWRITE, &mem_handle);
             /* save received setpoint and state in the flash memory */
             switch(index) {
@@ -1071,9 +1068,9 @@ static void uart_frame_parsing(uint8_t packet[])
     frame.destination[10] = '\0';
     frame.value = packet[11] - 48;
 
-    printf("frame.code %d", frame.code);
+/*     printf("frame.code %d", frame.code);
     printf("frame.destination %s", frame.destination);
-    printf("frame.value %d", frame.value);
+    printf("frame.value %d", frame.value); */
     switch (frame.code)
     {
     case SET_NODE_TEMP:
@@ -1105,7 +1102,7 @@ static void uart_event_task(void *pvParameters)
             {
             case UART_DATA:
                 uart_read_bytes(UART_NUM, dtmp, event.size, portMAX_DELAY);
-                printf("-----[%s]\n", dtmp);
+
                 while (i < event.size)
                 {
                     if (flag == 0)
@@ -1183,7 +1180,7 @@ static void uart_event_task(void *pvParameters)
 void app_main(void)
 {
     esp_err_t err;
-    //nvs_flash_erase();
+    nvs_flash_erase();
     ESP_LOGI(TAG, "Initializing...");
     err = nvs_flash_init();
     if (err == ESP_ERR_NVS_NO_FREE_PAGES)

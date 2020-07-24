@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/3.13.4/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/osboxes/Mesh/Kitchen/build/CMakeFiles/3.13.4/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ 
@@ -24,7 +24,7 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/3.13.4/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/osboxes/Mesh/Kitchen/build/CMakeFiles/3.13.4/CompilerIdCXX/a.out"
 
 Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
 xtensa-esp32-elf-gcc (crosstool-NG esp-2020r1) 8.2.0
@@ -33,19 +33,19 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_d266c"
-[1/2] Building C object CMakeFiles/cmTC_d266c.dir/testCCompiler.c.obj
-[2/2] Linking C executable cmTC_d266c
+Run Build Command:"/usr/bin/ninja" "cmTC_bfe88"
+[1/2] Building C object CMakeFiles/cmTC_bfe88.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_bfe88
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_f7d2a"
-[1/2] Building C object CMakeFiles/cmTC_f7d2a.dir/CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_f7d2a
+Run Build Command:"/usr/bin/ninja" "cmTC_b8c49"
+[1/2] Building C object CMakeFiles/cmTC_b8c49.dir/CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_b8c49
 Using built-in specs.
 COLLECT_GCC=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
 COLLECT_LTO_WRAPPER=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper
@@ -55,18 +55,18 @@ Thread model: posix
 gcc version 8.2.0 (crosstool-NG esp-2020r1) 
 COMPILER_PATH=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f7d2a'
- /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchZVlO2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_f7d2a /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_f7d2a.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f7d2a'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b8c49'
+ /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1YmdrM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_b8c49 /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_b8c49.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b8c49'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/ninja" "cmTC_f7d2a"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_f7d2a.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [[2/2] Linking C executable cmTC_f7d2a]
+  ignore line: [Run Build Command:"/usr/bin/ninja" "cmTC_b8c49"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_b8c49.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [[2/2] Linking C executable cmTC_b8c49]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper]
@@ -76,26 +76,26 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.2.0 (crosstool-NG esp-2020r1) ]
   ignore line: [COMPILER_PATH=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f7d2a']
-  link line: [ /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchZVlO2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_f7d2a /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_f7d2a.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b8c49']
+  link line: [ /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1YmdrM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_b8c49 /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_b8c49.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cchZVlO2.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc1YmdrM.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f7d2a] ==> ignore
+    arg [cmTC_b8c49] ==> ignore
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o] ==> ignore
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o] ==> ignore
     arg [-L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0] ==> dir [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0]
     arg [-L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib]
-    arg [CMakeFiles/cmTC_f7d2a.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_b8c49.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lc] ==> lib [c]
     arg [-lnosys] ==> lib [nosys]
@@ -113,11 +113,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_53957"
-[1/2] Building C object CMakeFiles/cmTC_53957.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_53957
+Run Build Command:"/usr/bin/ninja" "cmTC_2e91a"
+[1/2] Building C object CMakeFiles/cmTC_2e91a.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_2e91a
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -127,11 +127,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_53957"
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_a561e"
-[1/2] Building C object CMakeFiles/cmTC_a561e.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_a561e
+Run Build Command:"/usr/bin/ninja" "cmTC_d8ff3"
+[1/2] Building C object CMakeFiles/cmTC_d8ff3.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_d8ff3
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -141,11 +141,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_a561e"
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_8d849"
-[1/2] Building C object CMakeFiles/cmTC_8d849.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_8d849
+Run Build Command:"/usr/bin/ninja" "cmTC_6092b"
+[1/2] Building C object CMakeFiles/cmTC_6092b.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_6092b
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -153,19 +153,19 @@ Run Build Command:"/usr/bin/ninja" "cmTC_8d849"
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_88959"
-[1/2] Building CXX object CMakeFiles/cmTC_88959.dir/testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_88959
+Run Build Command:"/usr/bin/ninja" "cmTC_41016"
+[1/2] Building CXX object CMakeFiles/cmTC_41016.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_41016
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_f9a13"
-[1/2] Building CXX object CMakeFiles/cmTC_f9a13.dir/CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_f9a13
+Run Build Command:"/usr/bin/ninja" "cmTC_413f6"
+[1/2] Building CXX object CMakeFiles/cmTC_413f6.dir/CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_413f6
 Using built-in specs.
 COLLECT_GCC=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++
 COLLECT_LTO_WRAPPER=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper
@@ -175,18 +175,18 @@ Thread model: posix
 gcc version 8.2.0 (crosstool-NG esp-2020r1) 
 COMPILER_PATH=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f9a13'
- /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchaVNal.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_f9a13 /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_f9a13.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f9a13'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_413f6'
+ /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3KCPm7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_413f6 /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_413f6.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_413f6'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/ninja" "cmTC_f9a13"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_f9a13.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [[2/2] Linking CXX executable cmTC_f9a13]
+  ignore line: [Run Build Command:"/usr/bin/ninja" "cmTC_413f6"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_413f6.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [[2/2] Linking CXX executable cmTC_413f6]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper]
@@ -196,26 +196,26 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.2.0 (crosstool-NG esp-2020r1) ]
   ignore line: [COMPILER_PATH=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/:/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f9a13']
-  link line: [ /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchaVNal.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_f9a13 /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_f9a13.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_413f6']
+  link line: [ /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2 -plugin /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so -plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3KCPm7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_413f6 /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0 -L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_413f6.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o /home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cchaVNal.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3KCPm7.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f9a13] ==> ignore
+    arg [cmTC_413f6] ==> ignore
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crti.o] ==> ignore
     arg [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o] ==> ignore
     arg [-L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0] ==> dir [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0]
     arg [-L/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [/home/osboxes/esp/crosstool-NG/builds/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib]
-    arg [CMakeFiles/cmTC_f9a13.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTC_413f6.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -235,11 +235,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_8794e"
-[1/2] Building CXX object CMakeFiles/cmTC_8794e.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_8794e
+Run Build Command:"/usr/bin/ninja" "cmTC_b08ed"
+[1/2] Building CXX object CMakeFiles/cmTC_b08ed.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_b08ed
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -302,11 +302,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_8794e"
 
 
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_71668"
-[1/2] Building CXX object CMakeFiles/cmTC_71668.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_71668
+Run Build Command:"/usr/bin/ninja" "cmTC_c42c9"
+[1/2] Building CXX object CMakeFiles/cmTC_c42c9.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_c42c9
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -369,11 +369,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_71668"
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_79e78"
-[1/2] Building CXX object CMakeFiles/cmTC_79e78.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_79e78
+Run Build Command:"/usr/bin/ninja" "cmTC_5ef23"
+[1/2] Building CXX object CMakeFiles/cmTC_5ef23.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_5ef23
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -436,11 +436,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_79e78"
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_f1fc5"
-[1/2] Building CXX object CMakeFiles/cmTC_f1fc5.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_f1fc5
+Run Build Command:"/usr/bin/ninja" "cmTC_9f5ef"
+[1/2] Building CXX object CMakeFiles/cmTC_9f5ef.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_9f5ef
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -503,11 +503,11 @@ Run Build Command:"/usr/bin/ninja" "cmTC_f1fc5"
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/osboxes/esp/ble_mesh/Kitchen/build/CMakeFiles/CMakeTmp
+Change Dir: /home/osboxes/Mesh/Kitchen/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/ninja" "cmTC_bf04d"
-[1/2] Building CXX object CMakeFiles/cmTC_bf04d.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_bf04d
+Run Build Command:"/usr/bin/ninja" "cmTC_8ef4a"
+[1/2] Building CXX object CMakeFiles/cmTC_8ef4a.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_8ef4a
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

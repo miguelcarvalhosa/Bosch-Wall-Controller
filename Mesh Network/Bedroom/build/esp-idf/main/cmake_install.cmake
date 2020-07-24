@@ -1,4 +1,4 @@
-# Install script for directory: /home/osboxes/esp/ble_mesh/Bedroom/main
+# Install script for directory: /home/osboxes/Mesh/Bedroom/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

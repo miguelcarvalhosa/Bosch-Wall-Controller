@@ -1,4 +1,4 @@
-# Install script for directory: /home/osboxes/esp/ble_mesh/Kitchen/main
+# Install script for directory: /home/osboxes/Mesh/Kitchen/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

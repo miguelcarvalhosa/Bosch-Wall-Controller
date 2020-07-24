@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/osboxes/esp/ble_mesh/Bedroom/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("/home/osboxes/Mesh/Bedroom/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 
 endif()
 
